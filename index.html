@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>🐍 Python — Apuntes Kawaii</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#FF9EC4;
+    --pink-soft:#FFE1EE;
+    --lav:#C6AEEA;
+    --lav-soft:#EEE4FB;
+    --mint:#8FE3C6;
+    --mint-soft:#E1FBF1;
+    --yellow:#FFD76A;
+    --yellow-soft:#FFF4D6;
+    --cream:#FFF9F6;
+    --ink:#4A3B52;
+    --ink-soft:#8A7A93;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 8% 10%, var(--pink-soft) 0%, transparent 40%),
+      radial-gradient(circle at 95% 15%, var(--mint-soft) 0%, transparent 35%),
+      radial-gradient(circle at 90% 90%, var(--lav-soft) 0%, transparent 40%),
+      var(--cream);
+    font-family:'Nunito', sans-serif;
+    color:var(--ink);
+    padding:0 0 60px 0;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 20px;}
+
+  /* HERO */
+  .hero{
+    text-align:center;
+    padding:48px 20px 34px;
+    position:relative;
+  }
+  .hero .badge{
+    display:inline-block;
+    background:var(--white);
+    border:2px dashed var(--pink);
+    border-radius:999px;
+    padding:6px 18px;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:0.85rem;
+    color:var(--pink);
+    letter-spacing:.3px;
+    margin-bottom:16px;
+  }
+  .hero h1{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    font-size:2.5rem;
+    margin:0 0 10px;
+    color:var(--ink);
+    line-height:1.15;
+  }
+  .hero h1 .accent{color:var(--pink);}
+  .hero p{
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    max-width:480px;
+    margin:0 auto;
+  }
+  .hero .float-icons{font-size:1.6rem; margin-top:14px; letter-spacing:10px;}
+
+  /* BLOCK */
+  .block{
+    background:var(--white);
+    border-radius:28px;
+    padding:34px 32px;
+    margin:34px 0;
+    box-shadow:0 10px 0 var(--pink-soft), 0 2px 20px rgba(180,130,160,.15);
+    position:relative;
+    border:2px solid var(--pink-soft);
+  }
+  .block-number{
+    position:absolute;
+    top:-18px; left:32px;
+    background:var(--pink);
+    color:var(--white);
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:.8rem;
+    padding:6px 16px;
+    border-radius:999px;
+    box-shadow:0 3px 0 #E5709F;
+  }
+  .block h2{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:1.5rem;
+    margin:14px 0 6px;
+    color:var(--ink);
+  }
+  .block > p.intro{
+    color:var(--ink-soft);
+    margin-top:0;
+    font-size:.98rem;
+  }
+
+  h3.sub{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:600;
+    font-size:1.12rem;
+    color:var(--pink);
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:26px 0 8px;
+  }
+  h3.sub .ic{font-size:1.2rem;}
+
+  p{line-height:1.65; font-size:.98rem;}
+
+  code.inline{
+    background:var(--lav-soft);
+    color:#6B4FA0;
+    padding:2px 7px;
+    border-radius:7px;
+    font-family:'Fira Code', monospace;
+    font-size:.88em;
+  }
+
+  pre{
+    background:#2E2640;
+    color:#F3EEFB;
+    border-radius:16px;
+    padding:18px 20px;
+    overflow-x:auto;
+    font-family:'Fira Code', monospace;
+    font-size:.85rem;
+    line-height:1.6;
+    position:relative;
+    margin:14px 0;
+    border:3px solid var(--lav);
+  }
+  pre::before{
+    content:"🐍 python";
+    position:absolute;
+    top:-13px; left:16px;
+    background:var(--lav);
+    color:#fff;
+    font-family:'Baloo 2', sans-serif;
+    font-size:.68rem;
+    font-weight:700;
+    padding:2px 12px;
+    border-radius:999px;
+  }
+
+  /* NOTE BOXES */
+  .note{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    border-radius:18px;
+    padding:16px 18px;
+    margin:18px 0;
+    font-size:.95rem;
+  }
+  .note .ic{font-size:1.5rem; line-height:1;}
+  .note-important{ background:var(--yellow-soft); border:2px solid var(--yellow); }
+  .note-important b{color:#B8860B;}
+  .note-tip{ background:var(--mint-soft); border:2px dashed var(--mint); }
+  .note-tip b{color:#3AA37E;}
+  .note-conclusion{ background:var(--pink-soft); border:2px solid var(--pink); }
+  .note-conclusion b{color:#E5709F;}
+
+  /* SINOPTIC BOX */
+  .sinoptico{
+    margin-top:28px;
+    background:var(--lav-soft);
+    border-radius:20px;
+    padding:22px 24px;
+    border:2px solid var(--lav);
+  }
+  .sinoptico h4{
+    font-family:'Baloo 2', sans-serif;
+    font-size:1.05rem;
+    margin:0 0 14px;
+    color:#6B4FA0;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .sinoptico table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--white);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .sinoptico th{
+    background:var(--lav);
+    color:#fff;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:600;
+    font-size:.85rem;
+    text-align:left;
+    padding:10px 14px;
+  }
+  .sinoptico td{
+    padding:10px 14px;
+    font-size:.88rem;
+    border-bottom:1px solid var(--lav-soft);
+    vertical-align:top;
+  }
+  .sinoptico tr:last-child td{border-bottom:none;}
+  .sinoptico td.k{font-weight:700; color:var(--pink); white-space:nowrap;}
+
+  footer{
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:.85rem;
+    margin-top:40px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="badge">✨ Python ✨</span>
+    <h1>Mis apuntes de <span class="accent">Python</span> 🐍</h1>
+    <div class="float-icons">🎀 💻 🌸 ⌨️ ✨</div>
+  </div>
+
+  <!-- ===================== BLOQUE 1 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 1</div>
+    <h2>🧁 Conceptos básicos de la sintaxis en Python</h2>
+    <p class="intro">Antes de sumergirnos en conceptos más avanzados, es importante familiarizarse con algunos aspectos básicos de la sintaxis de Python.</p>
+
+    <h3 class="sub"><span class="ic">📐</span> Indentación</h3>
+    <p>En Python, la <b>indentación</b> (espacios o tabulaciones al inicio de una línea) se utiliza para delimitar bloques de código. A diferencia de otros lenguajes que usan llaves <code class="inline">{ }</code> o palabras clave, Python usa la indentación para determinar el alcance de las declaraciones.</p>
+
+<pre>if condition:
+    # Bloque de código si la condición es verdadera
+    instrucción1
+    instrucción2
+else:
+    # Bloque de código si la condición es falsa
+    instrucción3
+    instrucción4</pre>
+
+    <div class="note note-important">
+      <span class="ic">⚠️</span>
+      <div><b>Importante:</b> es fundamental mantener una indentación consistente en todo el código para evitar errores de sintaxis.</div>
+    </div>
+
+    <h3 class="sub"><span class="ic">🔤</span> Sensibilidad a mayúsculas y minúsculas</h3>
+    <p>Python distingue entre mayúsculas y minúsculas. Por lo tanto, <code class="inline">variable</code>, <code class="inline">Variable</code> y <code class="inline">VARIABLE</code> se consideran variables diferentes.</p>
+
+    <h3 class="sub"><span class="ic">🪄</span> Punto y coma</h3>
+    <p>A diferencia de otros lenguajes, Python no requiere el uso de punto y coma <code class="inline">;</code> al final de cada instrucción. Sin embargo, si querés escribir varias instrucciones en una sola línea, podés separarlas con un punto y coma.</p>
+<pre>instruccion1; instruccion2; instruccion3</pre>
+
+    <h3 class="sub"><span class="ic">🍥</span> Uso de paréntesis</h3>
+    <p>Los paréntesis se utilizan para agrupar expresiones, definir funciones y realizar llamadas a funciones.</p>
+<pre>resultado = (a + b) * c</pre>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> aunque no es obligatorio, casi toda la comunidad Python sigue la guía de estilo <b>PEP 8</b>, que recomienda usar <b>4 espacios</b> (no tabulaciones) para cada nivel de indentación. Adoptar esta costumbre desde el principio evita errores raros de "unindent" más adelante 🐣.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 1</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es?</th><th>Ejemplo clave</th></tr>
+        <tr><td class="k">Indentación</td><td>Delimita bloques de código en vez de llaves</td><td><code class="inline">if:</code> → 4 espacios</td></tr>
+        <tr><td class="k">Mayúsc/minúsc</td><td>Python es case-sensitive</td><td><code class="inline">var ≠ Var ≠ VAR</code></td></tr>
+        <tr><td class="k">Punto y coma</td><td>Opcional; separa instrucciones en una línea</td><td><code class="inline">a; b; c</code></td></tr>
+        <tr><td class="k">Paréntesis</td><td>Agrupan expresiones y definen/llaman funciones</td><td><code class="inline">(a+b)*c</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Estándar recomendado por la comunidad</td><td>PEP 8 → 4 espacios</td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 1 ===================== -->
+
+  <footer>hecho con 🩷 🐍</footer>
+</div>
+</body>
+</html>
