@@ -284,6 +284,119 @@ else:
   </div>
   <!-- ===================== FIN BLOQUE 1 ===================== -->
 
+  <!-- ===================== BLOQUE 2 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 2</div>
+    <h2>🍭 Fundamentos de Python</h2>
+    <p class="intro">Tipos de datos básicos: las categorías en las que se clasifican los valores que usamos en nuestros programas. Comprenderlos es fundamental para trabajar con variables y realizar operaciones en Python.</p>
+
+    <h3 class="sub"><span class="ic">🔢</span> Enteros (int)</h3>
+    <p>Los números enteros son aquellos que no tienen parte decimal. En Python, se representan simplemente escribiendo el número sin comillas ni puntos decimales.</p>
+<pre>edad = 25
+cantidad = 100</pre>
+
+    <h3 class="sub"><span class="ic">🌊</span> Flotantes (float)</h3>
+    <p>Los números flotantes, también conocidos como números de punto flotante, son aquellos que tienen una parte decimal. Se representan utilizando un punto para separar la parte entera de la parte decimal.</p>
+<pre>precio = 9.99
+altura = 1.75</pre>
+
+    <h3 class="sub"><span class="ic">💬</span> Cadenas de texto (strings)</h3>
+    <p>Las cadenas de texto, o simplemente cadenas, son secuencias de caracteres encerradas entre comillas simples <code class="inline">'...'</code> o dobles <code class="inline">"..."</code>. Se utilizan para representar texto en Python.</p>
+<pre>nombre = "Juan"
+mensaje = '¡Hola, mundo!'</pre>
+    <p>Podés incluir caracteres especiales en las cadenas utilizando el carácter de escape <code class="inline">\</code>. Por ejemplo, para incluir comillas dentro de una cadena, podés usar <code class="inline">\'</code> o <code class="inline">\"</code>. También podés usar la notación de triple comilla (<code class="inline">'''...'''</code> o <code class="inline">"""..."""</code>) para crear cadenas de varias líneas.</p>
+
+    <h3 class="sub"><span class="ic">🔘</span> Booleanos</h3>
+    <p>Los valores booleanos representan los valores de verdad: <code class="inline">True</code> (verdadero) y <code class="inline">False</code> (falso). Se utilizan comúnmente en expresiones condicionales y operaciones lógicas.</p>
+<pre>es_mayor_de_edad = True
+tiene_descuento = False</pre>
+
+    <div class="note note-important">
+      <span class="ic">📝</span>
+      <div><b>Ten en cuenta:</b> los valores booleanos en Python comienzan con una letra mayúscula: <code class="inline">True</code> y <code class="inline">False</code>.</div>
+    </div>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> si en algún momento tenés dudas de qué tipo de dato es una variable, podés usar la función <code class="inline">type()</code> para averiguarlo, por ejemplo <code class="inline">type(edad)</code> devuelve <code class="inline">&lt;class 'int'&gt;</code>. También te va a servir mucho más adelante conocer los <b>f-strings</b> (<code class="inline">f"Hola {nombre}"</code>), una forma muy cómoda de combinar texto y variables 🍰.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 2</h4>
+      <table>
+        <tr><th>Tipo</th><th>¿Qué representa?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">int</td><td>Números enteros, sin parte decimal</td><td><code class="inline">edad = 25</code></td></tr>
+        <tr><td class="k">float</td><td>Números con parte decimal</td><td><code class="inline">precio = 9.99</code></td></tr>
+        <tr><td class="k">str</td><td>Cadenas de texto entre comillas</td><td><code class="inline">nombre = "Juan"</code></td></tr>
+        <tr><td class="k">bool</td><td>Verdadero o falso (con mayúscula)</td><td><code class="inline">tiene_descuento = False</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Ver el tipo de una variable</td><td><code class="inline">type(edad)</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 2 ===================== -->
+
+  <!-- ===================== BLOQUE 2.1 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 2.1</div>
+    <h2>🏷️ Variables</h2>
+    <p class="intro">Las variables son contenedores que nos permiten almacenar y manipular datos en nuestros programas. Podés pensar en una variable como una etiqueta que asignás a un valor específico. En Python no es necesario declarar el tipo de dato de antemano, ya que Python lo infiere automáticamente según el valor asignado.</p>
+
+    <h3 class="sub"><span class="ic">✍️</span> Declaración y asignación de variables</h3>
+    <p>Para declarar y asignar un valor a una variable en Python, se utiliza el operador de asignación <code class="inline">=</code>. El nombre de la variable va a la izquierda del operador, y el valor que deseás asignar va a la derecha.</p>
+<pre>nombre = "Juan"
+edad = 25
+altura = 1.75
+es_estudiante = True</pre>
+    <p>En el ejemplo, declaramos y asignamos valores a las variables <code class="inline">nombre</code>, <code class="inline">edad</code>, <code class="inline">altura</code> y <code class="inline">es_estudiante</code>. Python infiere automáticamente el tipo de dato de cada una en función del valor asignado.</p>
+    <p>También podés asignar el mismo valor a múltiples variables en una sola línea, usando el operador de asignación múltiple:</p>
+<pre>a = b = c = 10</pre>
+    <p>En este caso, las variables <code class="inline">a</code>, <code class="inline">b</code> y <code class="inline">c</code> tendrán el valor <code class="inline">10</code>.</p>
+
+    <h3 class="sub"><span class="ic">📛</span> Normas para nombrar variables</h3>
+    <p>Al nombrar variables en Python, es importante seguir algunas normas para mantener un código legible y evitar errores:</p>
+    <p>
+      🔸 Los nombres solo pueden contener letras (a-z, A-Z), números (0-9) y guiones bajos (<code class="inline">_</code>). No pueden comenzar con un número.<br>
+      🔸 Python distingue entre mayúsculas y minúsculas, por lo que <code class="inline">nombre</code> y <code class="inline">Nombre</code> son variables diferentes.<br>
+      🔸 No se pueden utilizar palabras clave reservadas de Python como nombres de variables (por ejemplo, <code class="inline">if</code>, <code class="inline">else</code>, <code class="inline">for</code>, <code class="inline">while</code>, etc.).<br>
+      🔸 Se recomienda utilizar nombres descriptivos que indiquen claramente el propósito de la variable: <code class="inline">nombre</code>, <code class="inline">edad</code>, <code class="inline">total_ventas</code>, etc.
+    </p>
+
+    <p>Siguiendo estas normas, algunos nombres <b>válidos</b> ✅ son:</p>
+<pre>edad
+nombre_completo
+total_ventas
+_contador</pre>
+
+    <p>Y algunos nombres <b>inválidos</b> ❌ son:</p>
+<pre>1edad             # Comienza con un número
+nombre-completo   # Utiliza un guion en lugar de un guion bajo
+if                # Palabra clave reservada de Python</pre>
+
+    <div class="note note-important">
+      <span class="ic">📝</span>
+      <div><b>Ten en cuenta:</b> elegir nombres descriptivos para tus variables facilita la lectura y comprensión del código, tanto para vos como para otros desarrolladores que puedan trabajar en el mismo proyecto.</div>
+    </div>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> en Python, la convención de estilo más usada para nombrar variables es <b>snake_case</b> (todo en minúsculas, separando palabras con guion bajo, como <code class="inline">total_ventas</code>), a diferencia de otros lenguajes que prefieren <b>camelCase</b>. Mantener esta convención desde el inicio te va a ayudar a que tu código se "lea" como el de cualquier otro pythonista 🐍💕.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 2.1</h4>
+      <table>
+        <tr><th>Aspecto</th><th>Regla</th><th>Ejemplo</th></tr>
+        <tr><td class="k">Asignación</td><td>Se usa el operador <code class="inline">=</code></td><td><code class="inline">edad = 25</code></td></tr>
+        <tr><td class="k">Asignación múltiple</td><td>Varias variables, mismo valor</td><td><code class="inline">a = b = c = 10</code></td></tr>
+        <tr><td class="k">Caracteres permitidos</td><td>Letras, números y <code class="inline">_</code>; no iniciar con número</td><td><code class="inline">_contador</code> ✅</td></tr>
+        <tr><td class="k">Case-sensitive</td><td><code class="inline">nombre</code> ≠ <code class="inline">Nombre</code></td><td>—</td></tr>
+        <tr><td class="k">Palabras reservadas</td><td>No se pueden usar como nombre</td><td><code class="inline">if</code> ❌</td></tr>
+        <tr><td class="k">Tip extra</td><td>Convención recomendada</td><td>snake_case</td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 2.1 ===================== -->
+
   <footer>hecho con 🩷 🐍</footer>
 </div>
 </body>
