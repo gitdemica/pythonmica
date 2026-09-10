@@ -33,8 +33,6 @@
     padding:0 0 60px 0;
   }
   .wrap{max-width:760px; margin:0 auto; padding:0 20px;}
-
-  /* HERO */
   .hero{
     text-align:center;
     padding:48px 20px 34px;
@@ -69,8 +67,6 @@
     margin:0 auto;
   }
   .hero .float-icons{font-size:1.6rem; margin-top:14px; letter-spacing:10px;}
-
-  /* BLOCK */
   .block{
     background:var(--white);
     border-radius:28px;
@@ -104,7 +100,6 @@
     margin-top:0;
     font-size:.98rem;
   }
-
   h3.sub{
     font-family:'Baloo 2', sans-serif;
     font-weight:600;
@@ -116,9 +111,7 @@
     margin:26px 0 8px;
   }
   h3.sub .ic{font-size:1.2rem;}
-
   p{line-height:1.65; font-size:.98rem;}
-
   code.inline{
     background:var(--lav-soft);
     color:#6B4FA0;
@@ -127,7 +120,6 @@
     font-family:'Fira Code', monospace;
     font-size:.88em;
   }
-
   pre{
     background:#2E2640;
     color:#F3EEFB;
@@ -153,8 +145,6 @@
     padding:2px 12px;
     border-radius:999px;
   }
-
-  /* NOTE BOXES */
   .note{
     display:flex;
     gap:14px;
@@ -171,8 +161,6 @@
   .note-tip b{color:#3AA37E;}
   .note-conclusion{ background:var(--pink-soft); border:2px solid var(--pink); }
   .note-conclusion b{color:#E5709F;}
-
-  /* SINOPTIC BOX */
   .sinoptico{
     margin-top:28px;
     background:var(--lav-soft);
@@ -213,7 +201,6 @@
   }
   .sinoptico tr:last-child td{border-bottom:none;}
   .sinoptico td.k{font-weight:700; color:var(--pink); white-space:nowrap;}
-
   footer{
     text-align:center;
     color:var(--ink-soft);
@@ -224,22 +211,19 @@
 </head>
 <body>
 <div class="wrap">
-
   <div class="hero">
     <span class="badge">✨ Python ✨</span>
     <h1>Mis apuntes de <span class="accent">Python</span> 🐍</h1>
     <div class="float-icons">🎀 💻 🌸 ⌨️ ✨</div>
   </div>
 
-  <!-- ===================== BLOQUE 1 ===================== -->
+  <!-- BLOQUES 1-8.2 COMPLETOS -->
   <div class="block">
     <div class="block-number">BLOQUE 1</div>
     <h2>🧁 Conceptos básicos de la sintaxis en Python</h2>
     <p class="intro">Antes de sumergirnos en conceptos más avanzados, es importante familiarizarse con algunos aspectos básicos de la sintaxis de Python.</p>
-
     <h3 class="sub"><span class="ic">📐</span> Indentación</h3>
     <p>En Python, la <b>indentación</b> (espacios o tabulaciones al inicio de una línea) se utiliza para delimitar bloques de código. A diferencia de otros lenguajes que usan llaves <code class="inline">{ }</code> o palabras clave, Python usa la indentación para determinar el alcance de las declaraciones.</p>
-
 <pre>if condition:
     # Bloque de código si la condición es verdadera
     instrucción1
@@ -248,28 +232,22 @@ else:
     # Bloque de código si la condición es falsa
     instrucción3
     instrucción4</pre>
-
     <div class="note note-important">
       <span class="ic">⚠️</span>
       <div><b>Importante:</b> es fundamental mantener una indentación consistente en todo el código para evitar errores de sintaxis.</div>
     </div>
-
     <h3 class="sub"><span class="ic">🔤</span> Sensibilidad a mayúsculas y minúsculas</h3>
     <p>Python distingue entre mayúsculas y minúsculas. Por lo tanto, <code class="inline">variable</code>, <code class="inline">Variable</code> y <code class="inline">VARIABLE</code> se consideran variables diferentes.</p>
-
     <h3 class="sub"><span class="ic">🪄</span> Punto y coma</h3>
     <p>A diferencia de otros lenguajes, Python no requiere el uso de punto y coma <code class="inline">;</code> al final de cada instrucción. Sin embargo, si querés escribir varias instrucciones en una sola línea, podés separarlas con un punto y coma.</p>
 <pre>instruccion1; instruccion2; instruccion3</pre>
-
     <h3 class="sub"><span class="ic">🍥</span> Uso de paréntesis</h3>
     <p>Los paréntesis se utilizan para agrupar expresiones, definir funciones y realizar llamadas a funciones.</p>
 <pre>resultado = (a + b) * c</pre>
-
     <div class="note note-tip">
       <span class="ic">🌟</span>
       <div><b>Extra complementario:</b> aunque no es obligatorio, casi toda la comunidad Python sigue la guía de estilo <b>PEP 8</b>, que recomienda usar <b>4 espacios</b> (no tabulaciones) para cada nivel de indentación. Adoptar esta costumbre desde el principio evita errores raros de "unindent" más adelante 🐣.</div>
     </div>
-
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 1</h4>
       <table>
@@ -282,45 +260,31 @@ else:
       </table>
     </div>
   </div>
-  <!-- ===================== FIN BLOQUE 1 ===================== -->
 
-  <!-- ===================== BLOQUE 2 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 2</div>
     <h2>🍭 Fundamentos de Python</h2>
     <p class="intro">Tipos de datos básicos: las categorías en las que se clasifican los valores que usamos en nuestros programas. Comprenderlos es fundamental para trabajar con variables y realizar operaciones en Python.</p>
-
     <h3 class="sub"><span class="ic">🔢</span> Enteros (int)</h3>
     <p>Los números enteros son aquellos que no tienen parte decimal. En Python, se representan simplemente escribiendo el número sin comillas ni puntos decimales.</p>
 <pre>edad = 25
 cantidad = 100</pre>
-
     <h3 class="sub"><span class="ic">🌊</span> Flotantes (float)</h3>
     <p>Los números flotantes, también conocidos como números de punto flotante, son aquellos que tienen una parte decimal. Se representan utilizando un punto para separar la parte entera de la parte decimal.</p>
 <pre>precio = 9.99
 altura = 1.75</pre>
-
     <h3 class="sub"><span class="ic">💬</span> Cadenas de texto (strings)</h3>
     <p>Las cadenas de texto, o simplemente cadenas, son secuencias de caracteres encerradas entre comillas simples <code class="inline">'...'</code> o dobles <code class="inline">"..."</code>. Se utilizan para representar texto en Python.</p>
 <pre>nombre = "Juan"
 mensaje = '¡Hola, mundo!'</pre>
-    <p>Podés incluir caracteres especiales en las cadenas utilizando el carácter de escape <code class="inline">\</code>. Por ejemplo, para incluir comillas dentro de una cadena, podés usar <code class="inline">\'</code> o <code class="inline">\"</code>. También podés usar la notación de triple comilla (<code class="inline">'''...'''</code> o <code class="inline">"""..."""</code>) para crear cadenas de varias líneas.</p>
-
     <h3 class="sub"><span class="ic">🔘</span> Booleanos</h3>
     <p>Los valores booleanos representan los valores de verdad: <code class="inline">True</code> (verdadero) y <code class="inline">False</code> (falso). Se utilizan comúnmente en expresiones condicionales y operaciones lógicas.</p>
 <pre>es_mayor_de_edad = True
 tiene_descuento = False</pre>
-
     <div class="note note-important">
       <span class="ic">📝</span>
       <div><b>Ten en cuenta:</b> los valores booleanos en Python comienzan con una letra mayúscula: <code class="inline">True</code> y <code class="inline">False</code>.</div>
     </div>
-
-    <div class="note note-tip">
-      <span class="ic">🌟</span>
-      <div><b>Extra complementario:</b> si en algún momento tenés dudas de qué tipo de dato es una variable, podés usar la función <code class="inline">type()</code> para averiguarlo, por ejemplo <code class="inline">type(edad)</code> devuelve <code class="inline">&lt;class 'int'&gt;</code>. También te va a servir mucho más adelante conocer los <b>f-strings</b> (<code class="inline">f"Hola {nombre}"</code>), una forma muy cómoda de combinar texto y variables 🍰.</div>
-    </div>
-
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 2</h4>
       <table>
@@ -329,73 +293,339 @@ tiene_descuento = False</pre>
         <tr><td class="k">float</td><td>Números con parte decimal</td><td><code class="inline">precio = 9.99</code></td></tr>
         <tr><td class="k">str</td><td>Cadenas de texto entre comillas</td><td><code class="inline">nombre = "Juan"</code></td></tr>
         <tr><td class="k">bool</td><td>Verdadero o falso (con mayúscula)</td><td><code class="inline">tiene_descuento = False</code></td></tr>
-        <tr><td class="k">Tip extra</td><td>Ver el tipo de una variable</td><td><code class="inline">type(edad)</code></td></tr>
       </table>
     </div>
   </div>
-  <!-- ===================== FIN BLOQUE 2 ===================== -->
 
-  <!-- ===================== BLOQUE 2.1 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 2.1</div>
     <h2>🏷️ Variables</h2>
-    <p class="intro">Las variables son contenedores que nos permiten almacenar y manipular datos en nuestros programas. Podés pensar en una variable como una etiqueta que asignás a un valor específico. En Python no es necesario declarar el tipo de dato de antemano, ya que Python lo infiere automáticamente según el valor asignado.</p>
-
+    <p class="intro">Las variables son contenedores que nos permiten almacenar y manipular datos en nuestros programas. Podés pensar en una variable como una etiqueta que asignás a un valor específico.</p>
     <h3 class="sub"><span class="ic">✍️</span> Declaración y asignación de variables</h3>
-    <p>Para declarar y asignar un valor a una variable en Python, se utiliza el operador de asignación <code class="inline">=</code>. El nombre de la variable va a la izquierda del operador, y el valor que deseás asignar va a la derecha.</p>
 <pre>nombre = "Juan"
 edad = 25
 altura = 1.75
 es_estudiante = True</pre>
-    <p>En el ejemplo, declaramos y asignamos valores a las variables <code class="inline">nombre</code>, <code class="inline">edad</code>, <code class="inline">altura</code> y <code class="inline">es_estudiante</code>. Python infiere automáticamente el tipo de dato de cada una en función del valor asignado.</p>
-    <p>También podés asignar el mismo valor a múltiples variables en una sola línea, usando el operador de asignación múltiple:</p>
-<pre>a = b = c = 10</pre>
-    <p>En este caso, las variables <code class="inline">a</code>, <code class="inline">b</code> y <code class="inline">c</code> tendrán el valor <code class="inline">10</code>.</p>
-
     <h3 class="sub"><span class="ic">📛</span> Normas para nombrar variables</h3>
     <p>Al nombrar variables en Python, es importante seguir algunas normas para mantener un código legible y evitar errores:</p>
-    <p>
-      🔸 Los nombres solo pueden contener letras (a-z, A-Z), números (0-9) y guiones bajos (<code class="inline">_</code>). No pueden comenzar con un número.<br>
-      🔸 Python distingue entre mayúsculas y minúsculas, por lo que <code class="inline">nombre</code> y <code class="inline">Nombre</code> son variables diferentes.<br>
-      🔸 No se pueden utilizar palabras clave reservadas de Python como nombres de variables (por ejemplo, <code class="inline">if</code>, <code class="inline">else</code>, <code class="inline">for</code>, <code class="inline">while</code>, etc.).<br>
-      🔸 Se recomienda utilizar nombres descriptivos que indiquen claramente el propósito de la variable: <code class="inline">nombre</code>, <code class="inline">edad</code>, <code class="inline">total_ventas</code>, etc.
-    </p>
-
-    <p>Siguiendo estas normas, algunos nombres <b>válidos</b> ✅ son:</p>
+    <p>🔸 Los nombres solo pueden contener letras (a-z, A-Z), números (0-9) y guiones bajos (<code class="inline">_</code>). No pueden comenzar con un número.<br>
+    🔸 Python distingue entre mayúsculas y minúsculas.<br>
+    🔸 No se pueden utilizar palabras clave reservadas de Python como nombres de variables.</p>
+    <p>Nombres <b>válidos</b> ✅:</p>
 <pre>edad
 nombre_completo
 total_ventas
 _contador</pre>
-
-    <p>Y algunos nombres <b>inválidos</b> ❌ son:</p>
-<pre>1edad             # Comienza con un número
-nombre-completo   # Utiliza un guion en lugar de un guion bajo
-if                # Palabra clave reservada de Python</pre>
-
-    <div class="note note-important">
-      <span class="ic">📝</span>
-      <div><b>Ten en cuenta:</b> elegir nombres descriptivos para tus variables facilita la lectura y comprensión del código, tanto para vos como para otros desarrolladores que puedan trabajar en el mismo proyecto.</div>
-    </div>
-
-    <div class="note note-tip">
-      <span class="ic">🌟</span>
-      <div><b>Extra complementario:</b> en Python, la convención de estilo más usada para nombrar variables es <b>snake_case</b> (todo en minúsculas, separando palabras con guion bajo, como <code class="inline">total_ventas</code>), a diferencia de otros lenguajes que prefieren <b>camelCase</b>. Mantener esta convención desde el inicio te va a ayudar a que tu código se "lea" como el de cualquier otro pythonista 🐍💕.</div>
-    </div>
-
+    <p>Nombres <b>inválidos</b> ❌:</p>
+<pre>1edad
+nombre-completo
+if</pre>
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 2.1</h4>
       <table>
         <tr><th>Aspecto</th><th>Regla</th><th>Ejemplo</th></tr>
         <tr><td class="k">Asignación</td><td>Se usa el operador <code class="inline">=</code></td><td><code class="inline">edad = 25</code></td></tr>
-        <tr><td class="k">Asignación múltiple</td><td>Varias variables, mismo valor</td><td><code class="inline">a = b = c = 10</code></td></tr>
-        <tr><td class="k">Caracteres permitidos</td><td>Letras, números y <code class="inline">_</code>; no iniciar con número</td><td><code class="inline">_contador</code> ✅</td></tr>
-        <tr><td class="k">Case-sensitive</td><td><code class="inline">nombre</code> ≠ <code class="inline">Nombre</code></td><td>—</td></tr>
-        <tr><td class="k">Palabras reservadas</td><td>No se pueden usar como nombre</td><td><code class="inline">if</code> ❌</td></tr>
-        <tr><td class="k">Tip extra</td><td>Convención recomendada</td><td>snake_case</td></tr>
+        <tr><td class="k">Convención</td><td>Usar snake_case</td><td><code class="inline">total_ventas</code></td></tr>
       </table>
     </div>
   </div>
-  <!-- ===================== FIN BLOQUE 2.1 ===================== -->
+
+  <div class="block">
+    <div class="block-number">BLOQUE 2.2</div>
+    <h2>➕ Operadores</h2>
+    <p class="intro">Los operadores son símbolos especiales que nos permiten realizar operaciones en variables y valores.</p>
+    <h3 class="sub"><span class="ic">🧮</span> Aritméticos</h3>
+<pre>a = 10
+b = 3
+suma = a + b               # 13
+resta = a - b               # 7
+multiplicacion = a * b      # 30
+division = a / b            # 3.333333333
+division_entera = a // b    # 3
+modulo = a % b               # 1
+exponenciacion = a ** b     # 1000</pre>
+    <h3 class="sub"><span class="ic">⚖️</span> De comparación</h3>
+<pre>a = 10
+b = 3
+igual = a == b            # False
+diferente = a != b        # True
+mayor_que = a > b         # True
+menor_que = a < b         # False</pre>
+    <h3 class="sub"><span class="ic">🧠</span> Lógicos</h3>
+<pre>a = 10
+b = 3
+resultado_and = (a > 5) and (b < 5)    # True
+resultado_or = (a > 15) or (b < 5)     # True
+resultado_not = not (a > 5)            # False</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 2.2</h4>
+      <table>
+        <tr><th>Categoría</th><th>Operadores</th><th>Devuelve</th></tr>
+        <tr><td class="k">Aritméticos</td><td><code class="inline">+ - * / // % **</code></td><td>Un número</td></tr>
+        <tr><td class="k">Comparación</td><td><code class="inline">== != > < >= <=</code></td><td>Un booleano</td></tr>
+        <tr><td class="k">Lógicos</td><td><code class="inline">and / or / not</code></td><td>Un booleano</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-number">BLOQUE 3</div>
+    <h2>🚦 Estructuras de control</h2>
+    <p class="intro">Las estructuras de control nos permiten controlar el flujo de ejecución de nuestros programas.</p>
+    <h3 class="sub"><span class="ic">1️⃣</span> IF</h3>
+<pre>edad = 18
+
+if edad >= 18:
+    print("Eres mayor de edad.")</pre>
+    <h3 class="sub"><span class="ic">2️⃣</span> IF-ELSE</h3>
+<pre>edad = 15
+
+if edad >= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")</pre>
+    <h3 class="sub"><span class="ic">3️⃣</span> IF-ELIF-ELSE</h3>
+<pre>calificacion = 85
+
+if calificacion >= 90:
+    print("Excelente")
+elif calificacion >= 80:
+    print("Muy bueno")
+elif calificacion >= 70:
+    print("Bueno")
+else:
+    print("Necesita mejorar")</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 3</h4>
+      <table>
+        <tr><th>Estructura</th><th>¿Cuándo se usa?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">if</td><td>Ejecuta un bloque si la condición es verdadera</td><td><code class="inline">if edad >= 18:</code></td></tr>
+        <tr><td class="k">if-else</td><td>Agrega una alternativa cuando es falsa</td><td><code class="inline">if... else:</code></td></tr>
+        <tr><td class="k">if-elif-else</td><td>Evalúa varias condiciones en cadena</td><td><code class="inline">if... elif... else:</code></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-number">BLOQUE 3.1</div>
+    <h2>🔁 Bucles / loops</h2>
+    <p class="intro">Los bucles nos permiten repetir un bloque de código varias veces.</p>
+    <h3 class="sub"><span class="ic">🍎</span> For</h3>
+<pre>frutas = ["manzana", "banana", "naranja"]
+
+for fruta in frutas:
+    print(fruta)</pre>
+    <h3 class="sub"><span class="ic">⏳</span> While</h3>
+<pre>contador = 0
+
+while contador < 5:
+    print(contador)
+    contador += 1</pre>
+    <h3 class="sub"><span class="ic">🛑</span> Break</h3>
+<pre>contador = 0
+
+while True:
+    print(contador)
+    contador += 1
+
+    if contador == 5:
+        break</pre>
+    <h3 class="sub"><span class="ic">⏭️</span> Continue</h3>
+<pre>for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)</pre>
+    <h3 class="sub"><span class="ic">🌫️</span> Pass</h3>
+<pre>for i in range(5):
+    pass</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 3.1</h4>
+      <table>
+        <tr><th>Elemento</th><th>¿Qué hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">for</td><td>Itera sobre una secuencia</td><td><code class="inline">for f in frutas:</code></td></tr>
+        <tr><td class="k">while</td><td>Repite mientras la condición sea verdadera</td><td><code class="inline">while c < 5:</code></td></tr>
+        <tr><td class="k">break</td><td>Corta el bucle por completo</td><td><code class="inline">if c==5: break</code></td></tr>
+        <tr><td class="k">continue</td><td>Salta a la siguiente iteración</td><td><code class="inline">if par: continue</code></td></tr>
+        <tr><td class="k">pass</td><td>No hace nada (placeholder)</td><td><code class="inline">for i in range(5): pass</code></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-number">BLOQUE 4</div>
+    <h2>🧺 Estructuras de datos</h2>
+    <p class="intro">Las estructuras de datos nos permiten organizar y almacenar datos de manera eficiente.</p>
+    <h3 class="sub"><span class="ic">🛍️</span> Listas</h3>
+<pre>frutas = ["manzana", "banana", "naranja"]
+print(frutas[0])  # Imprime "manzana"
+
+frutas.append("pera")
+frutas.insert(1, "uva")
+frutas.remove("banana")</pre>
+    <h3 class="sub"><span class="ic">📍</span> Tuplas</h3>
+<pre>punto = (3, 4)
+print(punto[0])  # Imprime 3</pre>
+    <h3 class="sub"><span class="ic">🗂️</span> Diccionarios</h3>
+<pre>persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
+print(persona["nombre"])  # Imprime "Juan"</pre>
+    <h3 class="sub"><span class="ic">🎲</span> Conjuntos (set)</h3>
+<pre>frutas = {"manzana", "banana", "naranja"}
+frutas.add("pera")
+frutas.remove("banana")</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 4 completo</h4>
+      <table>
+        <tr><th>Estructura</th><th>¿Ordenada?</th><th>¿Mutable?</th><th>¿Duplicados?</th><th>Símbolo</th></tr>
+        <tr><td class="k">Lista</td><td>Sí</td><td>Sí</td><td>Sí</td><td><code class="inline">[]</code></td></tr>
+        <tr><td class="k">Tupla</td><td>Sí</td><td>No</td><td>Sí</td><td><code class="inline">()</code></td></tr>
+        <tr><td class="k">Diccionario</td><td>No*</td><td>Sí</td><td>Claves únicas</td><td><code class="inline">{clave: valor}</code></td></tr>
+        <tr><td class="k">Conjunto</td><td>No</td><td>Sí</td><td>No</td><td><code class="inline">{}</code></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-number">BLOQUE 5</div>
+    <h2>🧩 Funciones</h2>
+    <p class="intro">Las funciones son bloques de código reutilizables que nos permiten encapsular tareas específicas.</p>
+    <h3 class="sub"><span class="ic">📣</span> Definición y llamada de funciones</h3>
+<pre>def saludo():
+    print("¡Hola, mundo!")
+
+saludo()  # Imprime "¡Hola, mundo!"</pre>
+    <h3 class="sub"><span class="ic">🎁</span> Parámetros y argumentos</h3>
+<pre>def saludo(nombre):
+    print(f"¡Hola, {nombre}!")
+
+saludo("Juan")   # Imprime "¡Hola, Juan!"</pre>
+    <h3 class="sub"><span class="ic">↩️</span> Valores de retorno</h3>
+<pre>def suma(a, b):
+    return a + b
+
+resultado = suma(3, 4)
+print(resultado)  # Imprime 7</pre>
+    <h3 class="sub"><span class="ic">🪶</span> Funciones anónimas (lambda)</h3>
+<pre>cuadrado = lambda x: x ** 2
+print(cuadrado(5))  # Imprime 25</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 5</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">def</td><td>Define una función</td><td><code class="inline">def saludo():</code></td></tr>
+        <tr><td class="k">Parámetros</td><td>Valores que recibe la función</td><td><code class="inline">saludo(nombre)</code></td></tr>
+        <tr><td class="k">return</td><td>Devuelve un valor</td><td><code class="inline">return a + b</code></td></tr>
+        <tr><td class="k">lambda</td><td>Función anónima de una línea</td><td><code class="inline">lambda x: x**2</code></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-number">BLOQUE 6</div>
+    <h2>🚨 Manejo de errores y excepciones</h2>
+    <p class="intro">Python proporciona un mecanismo para manejar estos errores de manera controlada utilizando el manejo de excepciones.</p>
+    <h3 class="sub"><span class="ic">🐞</span> Errores comunes en Python</h3>
+    <p><b>SyntaxError:</b> El código no sigue las reglas de sintaxis de Python.<br>
+    <b>NameError:</b> Se hace referencia a una variable o función que no ha sido definida.<br>
+    <b>TypeError:</b> Se realiza una operación con tipos de datos incompatibles.<br>
+    <b>IndexError:</b> Se intenta acceder a un índice fuera del rango válido.</p>
+    <h3 class="sub"><span class="ic">🎣</span> Try</h3>
+<pre>try:
+    resultado = 10 / 0
+    print(resultado)
+except ZeroDivisionError:
+    print("Error: División por cero")</pre>
+    <h3 class="sub"><span class="ic">🧹</span> Finally</h3>
+<pre>try:
+    archivo = open("archivo.txt", "r")
+except FileNotFoundError:
+    print("Error: Archivo no encontrado")
+finally:
+    archivo.close()</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 6</h4>
+      <table>
+        <tr><th>Bloque</th><th>¿Cuándo se ejecuta?</th><th>Uso típico</th></tr>
+        <tr><td class="k">try</td><td>Siempre se intenta primero</td><td>Código que puede fallar</td></tr>
+        <tr><td class="k">except</td><td>Si ocurre la excepción indicada</td><td>Manejar el error</td></tr>
+        <tr><td class="k">finally</td><td>Siempre, haya o no excepción</td><td>Cerrar archivos/conexiones</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-number">BLOQUE 7</div>
+    <h2>⌨️ Entradas/salidas</h2>
+    <p class="intro">En Python, la entrada y salida de datos nos permite interactuar con el usuario y manipular archivos.</p>
+    <h3 class="sub"><span class="ic">🙋</span> Entrada de datos del usuario</h3>
+<pre>nombre = input("Ingresa tu nombre: ")
+edad = int(input("Ingresa tu edad: "))</pre>
+    <h3 class="sub"><span class="ic">🖥️</span> Salida de datos</h3>
+<pre>nombre = "Juan"
+edad = 25
+print(f"Hola, mi nombre es {nombre} y tengo {edad} años.")</pre>
+    <h3 class="sub"><span class="ic">📁</span> Lectura y escritura de archivos</h3>
+<pre>with open("datos.txt", "r") as archivo:
+    contenido = archivo.read()
+    print(contenido)
+
+with open("datos.txt", "w") as archivo:
+    archivo.write("Hola, mundo!")</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 7</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">input()</td><td>Pide datos al usuario (devuelve string)</td><td><code class="inline">input("Nombre: ")</code></td></tr>
+        <tr><td class="k">print()</td><td>Muestra información en pantalla</td><td><code class="inline">print("Hola")</code></td></tr>
+        <tr><td class="k">f-string</td><td>Incrusta variables en un texto</td><td><code class="inline">f"Hola {nombre}"</code></td></tr>
+        <tr><td class="k">with open()</td><td>Abre y cierra archivos automáticamente</td><td><code class="inline">with open(...) as f:</code></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-number">BLOQUE 8</div>
+    <h2>📦 Importación y creación de módulos</h2>
+    <p class="intro">En Python, un módulo es un archivo que contiene definiciones de funciones, clases y variables que se pueden utilizar en otros programas.</p>
+    <h3 class="sub"><span class="ic">📥</span> Importar módulos</h3>
+<pre>import math
+resultado = math.sqrt(25)
+print(resultado)  # Imprime 5.0
+
+from math import sqrt
+resultado = sqrt(25)
+print(resultado)  # Imprime 5.0</pre>
+    <h3 class="sub"><span class="ic">🎁</span> Funciones y clases de módulos estándar</h3>
+<pre>import random
+import datetime
+
+numero_aleatorio = random.randint(1, 10)
+fecha_actual = datetime.datetime.now()</pre>
+    <h3 class="sub"><span class="ic">🛠️</span> Creación de módulos propios</h3>
+<pre>#mi_modulo.py
+def saludar(nombre):
+    print(f"Hola, {nombre}!")
+
+def calcular_suma(a, b):
+    return a + b</pre>
+    <h3 class="sub"><span class="ic">🗄️</span> Paquetes</h3>
+<pre>mi_paquete/
+    __init__.py
+    modulo1.py
+    modulo2.py
+
+from mi_paquete import modulo1, modulo2</pre>
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 8 completo</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">import modulo</td><td>Importa el módulo completo</td><td><code class="inline">import math</code></td></tr>
+        <tr><td class="k">from m import f</td><td>Importa solo una función/clase</td><td><code class="inline">from math import sqrt</code></td></tr>
+        <tr><td class="k">Módulo propio</td><td>Archivo .py con funciones/clases</td><td><code class="inline">mi_modulo.py</code></td></tr>
+        <tr><td class="k">Paquete</td><td>Carpeta con módulos relacionados</td><td><code class="inline">mi_paquete/</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Instalar paquetes de terceros</td><td><code class="inline">pip install requests</code></td></tr>
+      </table>
+    </div>
+  </div>
 
   <footer>hecho con 🩷 🐍</footer>
 </div>
