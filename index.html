@@ -33,6 +33,8 @@
     padding:0 0 60px 0;
   }
   .wrap{max-width:760px; margin:0 auto; padding:0 20px;}
+
+  /* HERO */
   .hero{
     text-align:center;
     padding:48px 20px 34px;
@@ -67,6 +69,8 @@
     margin:0 auto;
   }
   .hero .float-icons{font-size:1.6rem; margin-top:14px; letter-spacing:10px;}
+
+  /* BLOCK */
   .block{
     background:var(--white);
     border-radius:28px;
@@ -100,6 +104,7 @@
     margin-top:0;
     font-size:.98rem;
   }
+
   h3.sub{
     font-family:'Baloo 2', sans-serif;
     font-weight:600;
@@ -111,7 +116,9 @@
     margin:26px 0 8px;
   }
   h3.sub .ic{font-size:1.2rem;}
+
   p{line-height:1.65; font-size:.98rem;}
+
   code.inline{
     background:var(--lav-soft);
     color:#6B4FA0;
@@ -120,6 +127,7 @@
     font-family:'Fira Code', monospace;
     font-size:.88em;
   }
+
   pre{
     background:#2E2640;
     color:#F3EEFB;
@@ -145,6 +153,8 @@
     padding:2px 12px;
     border-radius:999px;
   }
+
+  /* NOTE BOXES */
   .note{
     display:flex;
     gap:14px;
@@ -161,6 +171,8 @@
   .note-tip b{color:#3AA37E;}
   .note-conclusion{ background:var(--pink-soft); border:2px solid var(--pink); }
   .note-conclusion b{color:#E5709F;}
+
+  /* SINOPTIC BOX */
   .sinoptico{
     margin-top:28px;
     background:var(--lav-soft);
@@ -201,6 +213,7 @@
   }
   .sinoptico tr:last-child td{border-bottom:none;}
   .sinoptico td.k{font-weight:700; color:var(--pink); white-space:nowrap;}
+
   footer{
     text-align:center;
     color:var(--ink-soft);
@@ -211,19 +224,22 @@
 </head>
 <body>
 <div class="wrap">
+
   <div class="hero">
     <span class="badge">✨ Python ✨</span>
     <h1>Mis apuntes de <span class="accent">Python</span> 🐍</h1>
     <div class="float-icons">🎀 💻 🌸 ⌨️ ✨</div>
   </div>
 
-  <!-- BLOQUES 1-8.2 COMPLETOS -->
+  <!-- ===================== BLOQUE 1 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 1</div>
     <h2>🧁 Conceptos básicos de la sintaxis en Python</h2>
     <p class="intro">Antes de sumergirnos en conceptos más avanzados, es importante familiarizarse con algunos aspectos básicos de la sintaxis de Python.</p>
+
     <h3 class="sub"><span class="ic">📐</span> Indentación</h3>
     <p>En Python, la <b>indentación</b> (espacios o tabulaciones al inicio de una línea) se utiliza para delimitar bloques de código. A diferencia de otros lenguajes que usan llaves <code class="inline">{ }</code> o palabras clave, Python usa la indentación para determinar el alcance de las declaraciones.</p>
+
 <pre>if condition:
     # Bloque de código si la condición es verdadera
     instrucción1
@@ -232,22 +248,28 @@ else:
     # Bloque de código si la condición es falsa
     instrucción3
     instrucción4</pre>
+
     <div class="note note-important">
       <span class="ic">⚠️</span>
       <div><b>Importante:</b> es fundamental mantener una indentación consistente en todo el código para evitar errores de sintaxis.</div>
     </div>
+
     <h3 class="sub"><span class="ic">🔤</span> Sensibilidad a mayúsculas y minúsculas</h3>
     <p>Python distingue entre mayúsculas y minúsculas. Por lo tanto, <code class="inline">variable</code>, <code class="inline">Variable</code> y <code class="inline">VARIABLE</code> se consideran variables diferentes.</p>
+
     <h3 class="sub"><span class="ic">🪄</span> Punto y coma</h3>
     <p>A diferencia de otros lenguajes, Python no requiere el uso de punto y coma <code class="inline">;</code> al final de cada instrucción. Sin embargo, si querés escribir varias instrucciones en una sola línea, podés separarlas con un punto y coma.</p>
 <pre>instruccion1; instruccion2; instruccion3</pre>
+
     <h3 class="sub"><span class="ic">🍥</span> Uso de paréntesis</h3>
     <p>Los paréntesis se utilizan para agrupar expresiones, definir funciones y realizar llamadas a funciones.</p>
 <pre>resultado = (a + b) * c</pre>
+
     <div class="note note-tip">
       <span class="ic">🌟</span>
       <div><b>Extra complementario:</b> aunque no es obligatorio, casi toda la comunidad Python sigue la guía de estilo <b>PEP 8</b>, que recomienda usar <b>4 espacios</b> (no tabulaciones) para cada nivel de indentación. Adoptar esta costumbre desde el principio evita errores raros de "unindent" más adelante 🐣.</div>
     </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 1</h4>
       <table>
@@ -260,31 +282,45 @@ else:
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 1 ===================== -->
 
+  <!-- ===================== BLOQUE 2 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 2</div>
     <h2>🍭 Fundamentos de Python</h2>
     <p class="intro">Tipos de datos básicos: las categorías en las que se clasifican los valores que usamos en nuestros programas. Comprenderlos es fundamental para trabajar con variables y realizar operaciones en Python.</p>
+
     <h3 class="sub"><span class="ic">🔢</span> Enteros (int)</h3>
     <p>Los números enteros son aquellos que no tienen parte decimal. En Python, se representan simplemente escribiendo el número sin comillas ni puntos decimales.</p>
 <pre>edad = 25
 cantidad = 100</pre>
+
     <h3 class="sub"><span class="ic">🌊</span> Flotantes (float)</h3>
     <p>Los números flotantes, también conocidos como números de punto flotante, son aquellos que tienen una parte decimal. Se representan utilizando un punto para separar la parte entera de la parte decimal.</p>
 <pre>precio = 9.99
 altura = 1.75</pre>
+
     <h3 class="sub"><span class="ic">💬</span> Cadenas de texto (strings)</h3>
     <p>Las cadenas de texto, o simplemente cadenas, son secuencias de caracteres encerradas entre comillas simples <code class="inline">'...'</code> o dobles <code class="inline">"..."</code>. Se utilizan para representar texto en Python.</p>
 <pre>nombre = "Juan"
 mensaje = '¡Hola, mundo!'</pre>
+    <p>Podés incluir caracteres especiales en las cadenas utilizando el carácter de escape <code class="inline">\</code>. Por ejemplo, para incluir comillas dentro de una cadena, podés usar <code class="inline">\'</code> o <code class="inline">\"</code>. También podés usar la notación de triple comilla (<code class="inline">'''...'''</code> o <code class="inline">"""..."""</code>) para crear cadenas de varias líneas.</p>
+
     <h3 class="sub"><span class="ic">🔘</span> Booleanos</h3>
     <p>Los valores booleanos representan los valores de verdad: <code class="inline">True</code> (verdadero) y <code class="inline">False</code> (falso). Se utilizan comúnmente en expresiones condicionales y operaciones lógicas.</p>
 <pre>es_mayor_de_edad = True
 tiene_descuento = False</pre>
+
     <div class="note note-important">
       <span class="ic">📝</span>
       <div><b>Ten en cuenta:</b> los valores booleanos en Python comienzan con una letra mayúscula: <code class="inline">True</code> y <code class="inline">False</code>.</div>
     </div>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> si en algún momento tenés dudas de qué tipo de dato es una variable, podés usar la función <code class="inline">type()</code> para averiguarlo, por ejemplo <code class="inline">type(edad)</code> devuelve <code class="inline">&lt;class 'int'&gt;</code>. También te va a servir mucho más adelante conocer los <b>f-strings</b> (<code class="inline">f"Hola {nombre}"</code>), una forma muy cómoda de combinar texto y variables 🍰.</div>
+    </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 2</h4>
       <table>
@@ -293,48 +329,91 @@ tiene_descuento = False</pre>
         <tr><td class="k">float</td><td>Números con parte decimal</td><td><code class="inline">precio = 9.99</code></td></tr>
         <tr><td class="k">str</td><td>Cadenas de texto entre comillas</td><td><code class="inline">nombre = "Juan"</code></td></tr>
         <tr><td class="k">bool</td><td>Verdadero o falso (con mayúscula)</td><td><code class="inline">tiene_descuento = False</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Ver el tipo de una variable</td><td><code class="inline">type(edad)</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 2 ===================== -->
 
+  <!-- ===================== BLOQUE 2.1 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 2.1</div>
     <h2>🏷️ Variables</h2>
-    <p class="intro">Las variables son contenedores que nos permiten almacenar y manipular datos en nuestros programas. Podés pensar en una variable como una etiqueta que asignás a un valor específico.</p>
+    <p class="intro">Las variables son contenedores que nos permiten almacenar y manipular datos en nuestros programas. Podés pensar en una variable como una etiqueta que asignás a un valor específico. En Python no es necesario declarar el tipo de dato de antemano, ya que Python lo infiere automáticamente según el valor asignado.</p>
+
     <h3 class="sub"><span class="ic">✍️</span> Declaración y asignación de variables</h3>
+    <p>Para declarar y asignar un valor a una variable en Python, se utiliza el operador de asignación <code class="inline">=</code>. El nombre de la variable va a la izquierda del operador, y el valor que deseás asignar va a la derecha.</p>
 <pre>nombre = "Juan"
 edad = 25
 altura = 1.75
 es_estudiante = True</pre>
+    <p>En el ejemplo, declaramos y asignamos valores a las variables <code class="inline">nombre</code>, <code class="inline">edad</code>, <code class="inline">altura</code> y <code class="inline">es_estudiante</code>. Python infiere automáticamente el tipo de dato de cada una en función del valor asignado.</p>
+    <p>También podés asignar el mismo valor a múltiples variables en una sola línea, usando el operador de asignación múltiple:</p>
+<pre>a = b = c = 10</pre>
+    <p>En este caso, las variables <code class="inline">a</code>, <code class="inline">b</code> y <code class="inline">c</code> tendrán el valor <code class="inline">10</code>.</p>
+
     <h3 class="sub"><span class="ic">📛</span> Normas para nombrar variables</h3>
     <p>Al nombrar variables en Python, es importante seguir algunas normas para mantener un código legible y evitar errores:</p>
-    <p>🔸 Los nombres solo pueden contener letras (a-z, A-Z), números (0-9) y guiones bajos (<code class="inline">_</code>). No pueden comenzar con un número.<br>
-    🔸 Python distingue entre mayúsculas y minúsculas.<br>
-    🔸 No se pueden utilizar palabras clave reservadas de Python como nombres de variables.</p>
-    <p>Nombres <b>válidos</b> ✅:</p>
+    <p>
+      🔸 Los nombres solo pueden contener letras (a-z, A-Z), números (0-9) y guiones bajos (<code class="inline">_</code>). No pueden comenzar con un número.<br>
+      🔸 Python distingue entre mayúsculas y minúsculas, por lo que <code class="inline">nombre</code> y <code class="inline">Nombre</code> son variables diferentes.<br>
+      🔸 No se pueden utilizar palabras clave reservadas de Python como nombres de variables (por ejemplo, <code class="inline">if</code>, <code class="inline">else</code>, <code class="inline">for</code>, <code class="inline">while</code>, etc.).<br>
+      🔸 Se recomienda utilizar nombres descriptivos que indiquen claramente el propósito de la variable: <code class="inline">nombre</code>, <code class="inline">edad</code>, <code class="inline">total_ventas</code>, etc.
+    </p>
+
+    <p>Siguiendo estas normas, algunos nombres <b>válidos</b> ✅ son:</p>
 <pre>edad
 nombre_completo
 total_ventas
 _contador</pre>
-    <p>Nombres <b>inválidos</b> ❌:</p>
-<pre>1edad
-nombre-completo
-if</pre>
+
+    <p>Y algunos nombres <b>inválidos</b> ❌ son:</p>
+<pre>1edad             # Comienza con un número
+nombre-completo   # Utiliza un guion en lugar de un guion bajo
+if                # Palabra clave reservada de Python</pre>
+
+    <div class="note note-important">
+      <span class="ic">📝</span>
+      <div><b>Ten en cuenta:</b> elegir nombres descriptivos para tus variables facilita la lectura y comprensión del código, tanto para vos como para otros desarrolladores que puedan trabajar en el mismo proyecto.</div>
+    </div>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> en Python, la convención de estilo más usada para nombrar variables es <b>snake_case</b> (todo en minúsculas, separando palabras con guion bajo, como <code class="inline">total_ventas</code>), a diferencia de otros lenguajes que prefieren <b>camelCase</b>. Mantener esta convención desde el inicio te va a ayudar a que tu código se "lea" como el de cualquier otro pythonista 🐍💕.</div>
+    </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 2.1</h4>
       <table>
         <tr><th>Aspecto</th><th>Regla</th><th>Ejemplo</th></tr>
         <tr><td class="k">Asignación</td><td>Se usa el operador <code class="inline">=</code></td><td><code class="inline">edad = 25</code></td></tr>
-        <tr><td class="k">Convención</td><td>Usar snake_case</td><td><code class="inline">total_ventas</code></td></tr>
+        <tr><td class="k">Asignación múltiple</td><td>Varias variables, mismo valor</td><td><code class="inline">a = b = c = 10</code></td></tr>
+        <tr><td class="k">Caracteres permitidos</td><td>Letras, números y <code class="inline">_</code>; no iniciar con número</td><td><code class="inline">_contador</code> ✅</td></tr>
+        <tr><td class="k">Case-sensitive</td><td><code class="inline">nombre</code> ≠ <code class="inline">Nombre</code></td><td>—</td></tr>
+        <tr><td class="k">Palabras reservadas</td><td>No se pueden usar como nombre</td><td><code class="inline">if</code> ❌</td></tr>
+        <tr><td class="k">Tip extra</td><td>Convención recomendada</td><td>snake_case</td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 2.1 ===================== -->
 
+  <!-- ===================== BLOQUE 2.2 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 2.2</div>
     <h2>➕ Operadores</h2>
-    <p class="intro">Los operadores son símbolos especiales que nos permiten realizar operaciones en variables y valores.</p>
+    <p class="intro">Los operadores son símbolos especiales que nos permiten realizar operaciones en variables y valores. Python proporciona diferentes tipos de operadores para realizar operaciones aritméticas, comparaciones y operaciones lógicas.</p>
+
     <h3 class="sub"><span class="ic">🧮</span> Aritméticos</h3>
+    <p>Los operadores aritméticos se utilizan para realizar operaciones matemáticas básicas. Los principales son:</p>
+    <p>
+      🔸 Suma (<code class="inline">+</code>): suma dos valores.<br>
+      🔸 Resta (<code class="inline">-</code>): resta el segundo valor del primero.<br>
+      🔸 Multiplicación (<code class="inline">*</code>): multiplica dos valores.<br>
+      🔸 División (<code class="inline">/</code>): divide el primer valor por el segundo y devuelve un resultado de tipo flotante.<br>
+      🔸 División entera (<code class="inline">//</code>): divide y devuelve un resultado de tipo entero (se descarta la parte decimal).<br>
+      🔸 Módulo (<code class="inline">%</code>): devuelve el resto de la división entre el primer valor y el segundo.<br>
+      🔸 Exponenciación (<code class="inline">**</code>): eleva el primer valor a la potencia del segundo.
+    </p>
 <pre>a = 10
 b = 3
 suma = a + b               # 13
@@ -344,47 +423,107 @@ division = a / b            # 3.333333333
 division_entera = a // b    # 3
 modulo = a % b               # 1
 exponenciacion = a ** b     # 1000</pre>
+
     <h3 class="sub"><span class="ic">⚖️</span> De comparación</h3>
+    <p>Los operadores de comparación se utilizan para comparar dos valores y devuelven un valor booleano (<code class="inline">True</code> o <code class="inline">False</code>) según el resultado de la comparación:</p>
+    <p>
+      🔸 Igual a (<code class="inline">==</code>): devuelve <code class="inline">True</code> si ambos valores son iguales.<br>
+      🔸 Diferente de (<code class="inline">!=</code>): devuelve <code class="inline">True</code> si los valores son diferentes.<br>
+      🔸 Mayor que (<code class="inline">&gt;</code>): devuelve <code class="inline">True</code> si el primer valor es mayor que el segundo.<br>
+      🔸 Menor que (<code class="inline">&lt;</code>): devuelve <code class="inline">True</code> si el primer valor es menor que el segundo.<br>
+      🔸 Mayor o igual que (<code class="inline">&gt;=</code>): devuelve <code class="inline">True</code> si el primer valor es mayor o igual que el segundo.<br>
+      🔸 Menor o igual que (<code class="inline">&lt;=</code>): devuelve <code class="inline">True</code> si el primer valor es menor o igual que el segundo.
+    </p>
 <pre>a = 10
 b = 3
 igual = a == b            # False
 diferente = a != b        # True
 mayor_que = a > b         # True
-menor_que = a < b         # False</pre>
+menor_que = a < b         # False
+mayor_o_igual = a >= b    # True
+menor_o_igual = a <= b    # False</pre>
+
     <h3 class="sub"><span class="ic">🧠</span> Lógicos</h3>
+    <p>Los operadores lógicos se utilizan para combinar expresiones condicionales y evaluar múltiples condiciones:</p>
+    <p>
+      🔸 AND (<code class="inline">and</code>): devuelve <code class="inline">True</code> si ambas condiciones son verdaderas.<br>
+      🔸 OR (<code class="inline">or</code>): devuelve <code class="inline">True</code> si al menos una de las condiciones es verdadera.<br>
+      🔸 NOT (<code class="inline">not</code>): invierte el valor de una condición, devuelve <code class="inline">True</code> si la condición es falsa y <code class="inline">False</code> si es verdadera.
+    </p>
 <pre>a = 10
 b = 3
 resultado_and = (a > 5) and (b < 5)    # True
 resultado_or = (a > 15) or (b < 5)     # True
 resultado_not = not (a > 5)            # False</pre>
+    <p>Podés utilizar estos operadores para realizar cálculos, tomar decisiones basadas en comparaciones y combinar condiciones lógicas en tus programas.</p>
+
+    <div class="note note-important">
+      <span class="ic">⚠️</span>
+      <div><b>Importante:</b> Python sigue las reglas de precedencia de operadores, donde ciertos operadores tienen prioridad sobre otros. En general, la precedencia sigue el orden: paréntesis, exponenciación, multiplicación/división, suma/resta, operadores de comparación y operadores lógicos.</div>
+    </div>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> Python permite <b>encadenar comparaciones</b> de forma muy legible, algo que otros lenguajes no dejan hacer: en vez de escribir <code class="inline">(a > 0) and (a < 10)</code>, podés escribir directamente <code class="inline">0 &lt; a &lt; 10</code>. Y ante la duda entre operadores, siempre podés usar paréntesis extra para dejar la precedencia bien clara, aunque no sean obligatorios 🍬.</div>
+    </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 2.2</h4>
       <table>
         <tr><th>Categoría</th><th>Operadores</th><th>Devuelve</th></tr>
-        <tr><td class="k">Aritméticos</td><td><code class="inline">+ - * / // % **</code></td><td>Un número</td></tr>
+        <tr><td class="k">Aritméticos</td><td><code class="inline">+ - * / // % **</code></td><td>Un número (int o float)</td></tr>
         <tr><td class="k">Comparación</td><td><code class="inline">== != > < >= <=</code></td><td>Un booleano</td></tr>
         <tr><td class="k">Lógicos</td><td><code class="inline">and / or / not</code></td><td>Un booleano</td></tr>
+        <tr><td class="k">Precedencia</td><td>Orden de evaluación</td><td>() → ** → */ → +- → comparación → lógicos</td></tr>
+        <tr><td class="k">Tip extra</td><td>Comparaciones encadenadas</td><td><code class="inline">0 < a < 10</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 2.2 ===================== -->
 
+  <!-- ===================== BLOQUE 3 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 3</div>
     <h2>🚦 Estructuras de control</h2>
-    <p class="intro">Las estructuras de control nos permiten controlar el flujo de ejecución de nuestros programas.</p>
+    <p class="intro">Las estructuras de control nos permiten controlar el flujo de ejecución de nuestros programas. En Python, las más comunes son las estructuras condicionales y los bucles. Nos permiten tomar decisiones y repetir bloques de código según ciertas condiciones.</p>
+
+    <h3 class="sub"><span class="ic">🔀</span> Estructuras condicionales</h3>
+    <p>Nos permiten ejecutar diferentes bloques de código según se cumpla o no una determinada condición. Las más utilizadas son <code class="inline">if</code>, <code class="inline">if-else</code> e <code class="inline">if-elif-else</code>.</p>
+
     <h3 class="sub"><span class="ic">1️⃣</span> IF</h3>
+    <p>La estructura <code class="inline">if</code> se utiliza para ejecutar un bloque de código si una condición es verdadera. La sintaxis básica es:</p>
+<pre>if condicion:
+    # Bloque de código a ejecutar si la condición es verdadera
+    instrucciones</pre>
+    <p>Ejemplo:</p>
 <pre>edad = 18
 
 if edad >= 18:
     print("Eres mayor de edad.")</pre>
+    <p>En este ejemplo, si la variable <code class="inline">edad</code> es mayor o igual a 18, se ejecuta el bloque de código dentro del <code class="inline">if</code> y se imprime el mensaje "Eres mayor de edad."</p>
+
     <h3 class="sub"><span class="ic">2️⃣</span> IF-ELSE</h3>
+    <p>La estructura <code class="inline">if-else</code> nos permite especificar un bloque de código alternativo que se ejecutará si la condición del <code class="inline">if</code> es falsa. La sintaxis básica es:</p>
 <pre>edad = 15
 
 if edad >= 18:
     print("Eres mayor de edad.")
 else:
     print("Eres menor de edad.")</pre>
+    <p>En este ejemplo, si <code class="inline">edad</code> es mayor o igual a 18, se ejecuta el bloque del <code class="inline">if</code> e imprime "Eres mayor de edad." De lo contrario, se ejecuta el bloque del <code class="inline">else</code> e imprime "Eres menor de edad."</p>
+
     <h3 class="sub"><span class="ic">3️⃣</span> IF-ELIF-ELSE</h3>
+    <p>La estructura <code class="inline">if-elif-else</code> nos permite especificar múltiples condiciones y bloques de código alternativos. La sintaxis básica es:</p>
+<pre>if condicion1:
+    # Bloque de código a ejecutar si la condicion1 es verdadera
+    instrucciones
+elif condicion2:
+    # Bloque de código a ejecutar si la condicion2 es verdadera
+    instrucciones
+else:
+    # Bloque de código a ejecutar si ninguna condición anterior es verdadera
+    instrucciones</pre>
+    <p>Ejemplo:</p>
 <pre>calificacion = 85
 
 if calificacion >= 90:
@@ -395,6 +534,12 @@ elif calificacion >= 70:
     print("Bueno")
 else:
     print("Necesita mejorar")</pre>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> para condiciones muy simples, Python tiene el <b>operador ternario</b>, que resume un <code class="inline">if-else</code> en una sola línea: <code class="inline">mensaje = "Mayor" if edad >= 18 else "Menor"</code>. Es súper útil, pero conviene reservarlo para casos cortos: si la condición se pone larga, mejor volver al <code class="inline">if-else</code> tradicional para no perder legibilidad 🍡.</div>
+    </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 3</h4>
       <table>
@@ -402,26 +547,53 @@ else:
         <tr><td class="k">if</td><td>Ejecuta un bloque si la condición es verdadera</td><td><code class="inline">if edad >= 18:</code></td></tr>
         <tr><td class="k">if-else</td><td>Agrega una alternativa cuando es falsa</td><td><code class="inline">if... else:</code></td></tr>
         <tr><td class="k">if-elif-else</td><td>Evalúa varias condiciones en cadena</td><td><code class="inline">if... elif... else:</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Versión corta de if-else</td><td><code class="inline">"A" if x>0 else "B"</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 3 ===================== -->
 
+  <!-- ===================== BLOQUE 3.1 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 3.1</div>
     <h2>🔁 Bucles / loops</h2>
-    <p class="intro">Los bucles nos permiten repetir un bloque de código varias veces.</p>
+    <p class="intro">Los bucles nos permiten repetir un bloque de código varias veces. En Python, los más comunes son <code class="inline">for</code> y <code class="inline">while</code>.</p>
+
     <h3 class="sub"><span class="ic">🍎</span> For</h3>
+    <p>El bucle <code class="inline">for</code> se utiliza para iterar sobre una secuencia (como una lista, una tupla o una cadena) o cualquier objeto iterable. La sintaxis básica es:</p>
+<pre>for variable in secuencia:
+    # Bloque de código a repetir
+    instrucciones</pre>
+    <p>Ejemplo:</p>
 <pre>frutas = ["manzana", "banana", "naranja"]
 
 for fruta in frutas:
     print(fruta)</pre>
+    <p>El bucle <code class="inline">for</code> itera sobre la lista <code class="inline">frutas</code>. En cada iteración, la variable <code class="inline">fruta</code> toma el valor de un elemento de la lista, y se ejecuta el bloque de código dentro del bucle. En este caso, se imprime cada fruta en una línea separada.</p>
+
     <h3 class="sub"><span class="ic">⏳</span> While</h3>
+    <p>El bucle <code class="inline">while</code> se utiliza para repetir un bloque de código mientras una condición sea verdadera. La sintaxis básica es:</p>
+<pre>while condicion:
+    # Bloque de código a repetir
+    instrucciones</pre>
+    <p>Ejemplo:</p>
 <pre>contador = 0
 
 while contador < 5:
     print(contador)
     contador += 1</pre>
+    <p>El bucle <code class="inline">while</code> se ejecuta mientras la variable <code class="inline">contador</code> sea menor que 5. En cada iteración, se imprime el valor de <code class="inline">contador</code> y luego se incrementa en 1 mediante <code class="inline">contador += 1</code>. El bucle se detendrá cuando <code class="inline">contador</code> alcance el valor de 5.</p>
+
+    <div class="note note-important">
+      <span class="ic">⚠️</span>
+      <div><b>Importante:</b> hay que tener cuidado al usar el bucle <code class="inline">while</code>, ya que si la condición nunca se vuelve falsa, el bucle se ejecutará indefinidamente — lo que se conoce como un <b>bucle infinito</b>.</div>
+    </div>
+
+    <h3 class="sub"><span class="ic">🎛️</span> Control de bucles</h3>
+    <p>Python proporciona algunas instrucciones especiales para controlar el flujo de ejecución dentro de los bucles.</p>
+
     <h3 class="sub"><span class="ic">🛑</span> Break</h3>
+    <p>La instrucción <code class="inline">break</code> se utiliza para salir prematuramente de un bucle, independientemente de la condición. Cuando se encuentra un <code class="inline">break</code>, el bucle se detiene y el flujo continúa con la siguiente instrucción fuera del bucle.</p>
 <pre>contador = 0
 
 while True:
@@ -430,83 +602,396 @@ while True:
 
     if contador == 5:
         break</pre>
+    <p>El bucle <code class="inline">while</code> se ejecuta indefinidamente debido a la condición <code class="inline">True</code>. Sin embargo, dentro del bucle se verifica si <code class="inline">contador</code> es igual a 5. Cuando se cumple esa condición, se ejecuta <code class="inline">break</code>, lo que hace que el bucle se detenga.</p>
+
     <h3 class="sub"><span class="ic">⏭️</span> Continue</h3>
+    <p>La instrucción <code class="inline">continue</code> se utiliza para saltar el resto del bloque de código dentro de un bucle y pasar directamente a la siguiente iteración.</p>
 <pre>for i in range(10):
     if i % 2 == 0:
         continue
     print(i)</pre>
+    <p>El bucle itera sobre los números del 0 al 9 usando <code class="inline">range()</code>. Si el número es divisible por 2 (par), se ejecuta <code class="inline">continue</code> y se salta el resto del bloque. Como resultado, solo se imprimen los números impares.</p>
+
     <h3 class="sub"><span class="ic">🌫️</span> Pass</h3>
+    <p>La instrucción <code class="inline">pass</code> es una operación nula que no hace nada. Se utiliza como marcador de posición cuando se requiere una instrucción sintácticamente, pero no se desea realizar ninguna acción.</p>
 <pre>for i in range(5):
     pass</pre>
+    <p>El bucle itera del 0 al 4, pero no realiza ninguna acción debido a <code class="inline">pass</code>. Es útil cuando estás desarrollando un programa y querés reservar un bloque de código para implementarlo más adelante.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> si además de cada elemento necesitás su posición dentro de la lista, te va a servir mucho la función <code class="inline">enumerate()</code>: <code class="inline">for i, fruta in enumerate(frutas):</code> te da el índice <code class="inline">i</code> y el valor <code class="inline">fruta</code> a la vez. Y con <code class="inline">range()</code> también podés definir inicio, fin y salto, por ejemplo <code class="inline">range(0, 10, 2)</code> recorre de 2 en 2 🍬.</div>
+    </div>
+
+    <div class="note note-conclusion">
+      <span class="ic">🎯</span>
+      <div><b>Conclusión:</b> las estructuras de control son herramientas poderosas que nos permiten controlar el flujo de ejecución de nuestros programas. Con las estructuras condicionales (<code class="inline">if</code>, <code class="inline">if-else</code>, <code class="inline">if-elif-else</code>) podemos tomar decisiones basadas en condiciones, mientras que con los bucles (<code class="inline">for</code>, <code class="inline">while</code>) podemos repetir bloques de código varias veces. Además, las instrucciones <code class="inline">break</code>, <code class="inline">continue</code> y <code class="inline">pass</code> nos brindan un control adicional sobre el comportamiento de los bucles.</div>
+    </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 3.1</h4>
       <table>
         <tr><th>Elemento</th><th>¿Qué hace?</th><th>Ejemplo</th></tr>
         <tr><td class="k">for</td><td>Itera sobre una secuencia</td><td><code class="inline">for f in frutas:</code></td></tr>
-        <tr><td class="k">while</td><td>Repite mientras la condición sea verdadera</td><td><code class="inline">while c < 5:</code></td></tr>
+        <tr><td class="k">while</td><td>Repite mientras la condición sea verdadera</td><td><code class="inline">while c &lt; 5:</code></td></tr>
         <tr><td class="k">break</td><td>Corta el bucle por completo</td><td><code class="inline">if c==5: break</code></td></tr>
         <tr><td class="k">continue</td><td>Salta a la siguiente iteración</td><td><code class="inline">if par: continue</code></td></tr>
         <tr><td class="k">pass</td><td>No hace nada (placeholder)</td><td><code class="inline">for i in range(5): pass</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Índice + valor a la vez</td><td><code class="inline">enumerate(frutas)</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 3.1 ===================== -->
 
+  <!-- ===================== BLOQUE 4 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 4</div>
     <h2>🧺 Estructuras de datos</h2>
-    <p class="intro">Las estructuras de datos nos permiten organizar y almacenar datos de manera eficiente.</p>
+    <p class="intro">Las estructuras de datos nos permiten organizar y almacenar datos de manera eficiente en nuestros programas. Python proporciona varias estructuras integradas, como listas, tuplas, diccionarios y conjuntos, cada una con sus propias características y usos.</p>
+
     <h3 class="sub"><span class="ic">🛍️</span> Listas</h3>
+    <p>Una lista es una estructura de datos <b>mutable</b> y <b>ordenada</b> que permite almacenar una colección de elementos. Los elementos de una lista pueden ser de diferentes tipos de datos y se encierran entre corchetes <code class="inline">[]</code>, separados por comas.</p>
+
+    <h3 class="sub"><span class="ic">🔎</span> Creación y acceso</h3>
+    <p>Para crear una lista, simplemente encerrá los elementos entre corchetes:</p>
+<pre>frutas = ["manzana", "banana", "naranja"]</pre>
+    <p>Para acceder a los elementos de una lista, utilizá el índice del elemento entre corchetes. Los índices comienzan desde <code class="inline">0</code>.</p>
+<pre>print(frutas[0])  # Imprime "manzana"
+print(frutas[1])  # Imprime "banana"
+print(frutas[2])  # Imprime "naranja"</pre>
+    <p>También podés acceder a los elementos desde el final de la lista utilizando índices negativos. El índice <code class="inline">-1</code> representa el último elemento, <code class="inline">-2</code> el penúltimo, y así sucesivamente.</p>
+<pre>print(frutas[-1])  # Imprime "naranja"
+print(frutas[-2])  # Imprime "banana"
+print(frutas[-3])  # Imprime "manzana"</pre>
+
+    <h3 class="sub"><span class="ic">🧰</span> Métodos de listas</h3>
+    <p>Las listas en Python tienen varios métodos incorporados que nos permiten manipular y modificar sus elementos. Algunos métodos comunes son:</p>
+    <p>
+      🔸 <code class="inline">append(elemento)</code>: agrega un elemento al final de la lista.<br>
+      🔸 <code class="inline">insert(indice, elemento)</code>: inserta un elemento en una posición específica.<br>
+      🔸 <code class="inline">remove(elemento)</code>: elimina la primera aparición de un elemento.<br>
+      🔸 <code class="inline">pop(indice)</code>: elimina y devuelve el elemento en una posición específica.<br>
+      🔸 <code class="inline">sort()</code>: ordena los elementos en orden ascendente.<br>
+      🔸 <code class="inline">reverse()</code>: invierte el orden de los elementos.
+    </p>
+    <p>Ejemplo:</p>
 <pre>frutas = ["manzana", "banana", "naranja"]
-print(frutas[0])  # Imprime "manzana"
 
 frutas.append("pera")
+print(frutas)  # ["manzana", "banana", "naranja", "pera"]
+
 frutas.insert(1, "uva")
-frutas.remove("banana")</pre>
-    <h3 class="sub"><span class="ic">📍</span> Tuplas</h3>
-<pre>punto = (3, 4)
-print(punto[0])  # Imprime 3</pre>
-    <h3 class="sub"><span class="ic">🗂️</span> Diccionarios</h3>
-<pre>persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
-print(persona["nombre"])  # Imprime "Juan"</pre>
-    <h3 class="sub"><span class="ic">🎲</span> Conjuntos (set)</h3>
-<pre>frutas = {"manzana", "banana", "naranja"}
-frutas.add("pera")
-frutas.remove("banana")</pre>
+print(frutas)  # ["manzana", "uva", "banana", "naranja", "pera"]
+
+frutas.remove("banana")
+print(frutas)  # ["manzana", "uva", "naranja", "pera"]
+
+fruta_eliminada = frutas.pop(2)
+print(frutas)            # ["manzana", "uva", "pera"]
+print(fruta_eliminada)   # "naranja"
+
+frutas.sort()
+print(frutas)  # ["manzana", "pera", "uva"]
+
+frutas.reverse()
+print(frutas)  # ["uva", "pera", "manzana"]</pre>
+
+    <h3 class="sub"><span class="ic">✨</span> Listas de comprensión</h3>
+    <p>Las listas de comprensión son una forma concisa de crear nuevas listas basadas en una secuencia existente. Permiten filtrar y transformar los elementos de una lista en una sola línea de código.</p>
+<pre>nueva_lista = [expresion for elemento in secuencia if condicion]</pre>
+    <p>Ejemplo:</p>
+<pre>numeros = [1, 2, 3, 4, 5]
+cuadrados = [x ** 2 for x in numeros if x % 2 == 0]
+print(cuadrados)  # Imprime [4, 16]</pre>
+    <p>En este ejemplo, se crea una nueva lista llamada <code class="inline">cuadrados</code>, que contiene los cuadrados de los números pares de la lista <code class="inline">numeros</code>. La expresión <code class="inline">x ** 2</code> eleva cada elemento al cuadrado, y la condición <code class="inline">if x % 2 == 0</code> filtra solo los números pares.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> además de acceder a un solo elemento, podés obtener "rebanadas" (slices) de una lista con la notación <code class="inline">lista[inicio:fin]</code>. Por ejemplo, <code class="inline">frutas[0:2]</code> devuelve los dos primeros elementos, y <code class="inline">frutas[:2]</code> o <code class="inline">frutas[1:]</code> también funcionan omitiendo el inicio o el fin. Es una herramienta que vas a usar muchísimo, ¡tomá nota! 🍧</div>
+    </div>
+
     <div class="sinoptico">
-      <h4>📋 Cuadro sinóptico — Bloque 4 completo</h4>
+      <h4>📋 Cuadro sinóptico — Bloque 4</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">Lista</td><td>Colección mutable y ordenada</td><td><code class="inline">["a","b","c"]</code></td></tr>
+        <tr><td class="k">Acceso por índice</td><td>Empieza en 0; negativos desde el final</td><td><code class="inline">frutas[0]</code> / <code class="inline">frutas[-1]</code></td></tr>
+        <tr><td class="k">append / insert</td><td>Agregar elementos</td><td><code class="inline">frutas.append("pera")</code></td></tr>
+        <tr><td class="k">remove / pop</td><td>Quitar elementos</td><td><code class="inline">frutas.pop(2)</code></td></tr>
+        <tr><td class="k">sort / reverse</td><td>Ordenar / invertir</td><td><code class="inline">frutas.sort()</code></td></tr>
+        <tr><td class="k">Comprensión</td><td>Crear listas en una línea</td><td><code class="inline">[x**2 for x in n if ...]</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Obtener sub-listas (slicing)</td><td><code class="inline">frutas[0:2]</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 4 ===================== -->
+
+  <!-- ===================== BLOQUE 4.1 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 4.1</div>
+    <h2>📍 Tuplas</h2>
+    <p class="intro">Una tupla es una estructura de datos <b>inmutable</b> y <b>ordenada</b> que permite almacenar una colección de elementos. Los elementos de una tupla se encierran entre paréntesis <code class="inline">()</code>, separados por comas.</p>
+
+    <h3 class="sub"><span class="ic">🔎</span> Creación y acceso</h3>
+    <p>Para crear una tupla, encerrá los elementos entre paréntesis:</p>
+<pre>punto = (3, 4)</pre>
+    <p>Para acceder a los elementos de una tupla, utilizá el índice del elemento entre corchetes, igual que en las listas:</p>
+<pre>print(punto[0])  # Imprime 3
+print(punto[1])  # Imprime 4</pre>
+    <p>A diferencia de las listas, las tuplas son <b>inmutables</b>, lo que significa que no se pueden modificar una vez creadas. No se pueden agregar, eliminar ni cambiar elementos en una tupla existente.</p>
+    <p>Las tuplas son útiles cuando necesitás almacenar una colección de elementos que no deben modificarse, como coordenadas o datos de configuración.</p>
+
+    <h3 class="sub"><span class="ic">🧰</span> Métodos de tuplas</h3>
+    <p>Aunque las tuplas son inmutables, Python proporciona varios métodos útiles para trabajar con ellas:</p>
+    <p>
+      🔸 <code class="inline">count(elemento)</code>: devuelve el número de veces que aparece un elemento en la tupla.<br>
+      🔸 <code class="inline">index(elemento)</code>: devuelve el índice de la primera aparición de un elemento. Opcionalmente se puede especificar el inicio y fin de la búsqueda.<br>
+      🔸 <code class="inline">len(tupla)</code>: aunque no es un método de tupla propiamente dicho, esta función incorporada devuelve la longitud de la tupla.
+    </p>
+<pre>mi_tupla = (1, 2, 3, 2, 4, 2)
+
+print(mi_tupla.index(2))        # Salida: 1
+print(mi_tupla.index(2, 2))     # Salida: 3
+print(mi_tupla.index(2, 2, 4))  # Salida: 3</pre>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> una de las cosas más lindas de las tuplas es el <b>"desempaquetado"</b> (unpacking): podés asignar cada elemento a una variable en un solo paso, por ejemplo <code class="inline">x, y = punto</code>. Es una técnica muy usada, entre otras cosas, para que una función devuelva varios valores a la vez 🍇.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 4.1</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">Tupla</td><td>Colección ordenada e inmutable</td><td><code class="inline">punto = (3, 4)</code></td></tr>
+        <tr><td class="k">Acceso</td><td>Por índice, igual que listas</td><td><code class="inline">punto[0]</code></td></tr>
+        <tr><td class="k">count()</td><td>Cuenta apariciones de un elemento</td><td><code class="inline">t.count(2)</code></td></tr>
+        <tr><td class="k">index()</td><td>Busca la posición de un elemento</td><td><code class="inline">t.index(2, 2)</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Desempaquetado en variables</td><td><code class="inline">x, y = punto</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 4.1 ===================== -->
+
+  <!-- ===================== BLOQUE 4.2 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 4.2</div>
+    <h2>🗂️ Diccionarios</h2>
+    <p class="intro">Un diccionario es una estructura de datos <b>mutable</b> y <b>no ordenada</b> que permite almacenar pares de <b>clave-valor</b>. Cada elemento consiste en una clave única y su valor correspondiente. Se encierran entre llaves <code class="inline">{}</code>, y los pares clave-valor se separan por comas.</p>
+
+    <h3 class="sub"><span class="ic">🔎</span> Creación y acceso</h3>
+    <p>Para crear un diccionario, utilizá llaves y separá las claves y valores con dos puntos:</p>
+<pre>persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}</pre>
+    <p>Para acceder a los valores de un diccionario, utilizá la clave correspondiente entre corchetes:</p>
+<pre>print(persona["nombre"])  # Imprime "Juan"
+print(persona["edad"])    # Imprime 25
+print(persona["ciudad"])  # Imprime "Madrid"</pre>
+    <p>También podés utilizar el método <code class="inline">get()</code> para obtener el valor de una clave. Si la clave no existe, devuelve un valor predeterminado (por defecto, <code class="inline">None</code>).</p>
+
+    <h3 class="sub"><span class="ic">🧰</span> Métodos de diccionarios</h3>
+    <p>Los diccionarios en Python tienen varios métodos incorporados para manipular y acceder a los elementos. Algunos métodos comunes son:</p>
+    <p>
+      🔸 <code class="inline">keys()</code>: devuelve una vista de todas las claves del diccionario.<br>
+      🔸 <code class="inline">values()</code>: devuelve una vista de todos los valores del diccionario.<br>
+      🔸 <code class="inline">items()</code>: devuelve una vista de todos los pares clave-valor.<br>
+      🔸 <code class="inline">update(otro_diccionario)</code>: actualiza el diccionario con los pares clave-valor de otro diccionario.
+    </p>
+    <p>Ejemplo:</p>
+<pre>persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
+
+print(persona.keys())    # dict_keys(["nombre", "edad", "ciudad"])
+print(persona.values())  # dict_values(["Juan", 25, "Madrid"])
+print(persona.items())   # dict_items([("nombre","Juan"),("edad",25),("ciudad","Madrid")])
+
+persona.update({"profesion": "Ingeniero"})
+print(persona)
+# {"nombre": "Juan", "edad": 25, "ciudad": "Madrid", "profesion": "Ingeniero"}</pre>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> siempre que no estés 100% seguro/a de que una clave existe, es más seguro usar <code class="inline">persona.get("telefono")</code> en vez de <code class="inline">persona["telefono"]</code>: si la clave no existe, <code class="inline">get()</code> devuelve <code class="inline">None</code> (o un valor por defecto que vos elijas) en lugar de romper el programa con un error 🍮.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 4.2</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">Diccionario</td><td>Pares clave-valor, mutable y no ordenado</td><td><code class="inline">{"nombre":"Juan"}</code></td></tr>
+        <tr><td class="k">Acceso</td><td>Por clave entre corchetes</td><td><code class="inline">persona["edad"]</code></td></tr>
+        <tr><td class="k">keys / values / items</td><td>Vistas de claves, valores o pares</td><td><code class="inline">persona.items()</code></td></tr>
+        <tr><td class="k">update()</td><td>Agrega/actualiza pares</td><td><code class="inline">persona.update({...})</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Acceso seguro sin errores</td><td><code class="inline">persona.get("tel")</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 4.2 ===================== -->
+
+  <!-- ===================== BLOQUE 4.3 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 4.3</div>
+    <h2>🎲 Conjuntos (set)</h2>
+    <p class="intro">Un conjunto es una estructura de datos <b>mutable</b> y <b>no ordenada</b> que permite almacenar una colección de elementos <b>únicos</b>. Se encierran entre llaves <code class="inline">{}</code> o se crean utilizando la función <code class="inline">set()</code>.</p>
+
+    <h3 class="sub"><span class="ic">🔎</span> Creación y operaciones básicas</h3>
+    <p>Para crear un conjunto, utilizá llaves o la función <code class="inline">set()</code>:</p>
+<pre>frutas = {"manzana", "banana", "naranja"}
+numeros = set([1, 2, 3, 4, 5])</pre>
+    <p>Los conjuntos admiten operaciones matemáticas de conjuntos, como la unión (<code class="inline">|</code>), la intersección (<code class="inline">&amp;</code>), la diferencia (<code class="inline">-</code>) y la diferencia simétrica (<code class="inline">^</code>).</p>
+<pre>conjunto1 = {1, 2, 3}
+conjunto2 = {3, 4, 5}
+
+union = conjunto1 | conjunto2
+print(union)  # {1, 2, 3, 4, 5}
+
+interseccion = conjunto1 & conjunto2
+print(interseccion)  # {3}
+
+diferencia = conjunto1 - conjunto2
+print(diferencia)  # {1, 2}
+
+diferencia_simetrica = conjunto1 ^ conjunto2
+print(diferencia_simetrica)  # {1, 2, 4, 5}</pre>
+
+    <h3 class="sub"><span class="ic">🧰</span> Métodos de conjuntos</h3>
+    <p>Los conjuntos en Python tienen varios métodos incorporados para manipular y acceder a los elementos. Algunos métodos comunes son:</p>
+    <p>
+      🔸 <code class="inline">add(elemento)</code>: agrega un elemento al conjunto.<br>
+      🔸 <code class="inline">remove(elemento)</code>: elimina un elemento del conjunto. Si no existe, genera un error.<br>
+      🔸 <code class="inline">discard(elemento)</code>: elimina un elemento si está presente. Si no existe, no hace nada.<br>
+      🔸 <code class="inline">clear()</code>: elimina todos los elementos del conjunto.
+    </p>
+    <p>Ejemplo:</p>
+<pre>frutas = {"manzana", "banana", "naranja"}
+
+frutas.add("pera")
+print(frutas)  # {"manzana", "banana", "naranja", "pera"}
+
+frutas.remove("banana")
+print(frutas)  # {"manzana", "naranja", "pera"}
+
+frutas.discard("uva")
+print(frutas)  # {"manzana", "naranja", "pera"}
+
+frutas.clear()
+print(frutas)  # set()</pre>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> si usás <code class="inline">remove()</code> y el elemento no existe, tu programa se corta con un error — por eso, cuando no estés seguro/a de que el elemento está en el conjunto, es más prolijo usar <code class="inline">discard()</code>. Además, como los conjuntos no permiten duplicados, son una forma súper rápida de eliminar elementos repetidos de una lista: <code class="inline">set(lista_con_duplicados)</code> 🍭.</div>
+    </div>
+
+    <div class="note note-conclusion">
+      <span class="ic">🎯</span>
+      <div><b>Conclusión:</b> las estructuras de datos en Python nos brindan una gran flexibilidad y potencia para almacenar y manipular datos en nuestros programas. Las <b>listas</b> son útiles para colecciones ordenadas y mutables, las <b>tuplas</b> para colecciones ordenadas e inmutables, los <b>diccionarios</b> para almacenar pares clave-valor y los <b>conjuntos</b> para colecciones no ordenadas de elementos únicos.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 4.3</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">Conjunto</td><td>Colección no ordenada, sin duplicados</td><td><code class="inline">{"a","b"}</code></td></tr>
+        <tr><td class="k">Unión / intersección</td><td>Operaciones matemáticas de conjuntos</td><td><code class="inline">c1 | c2</code> / <code class="inline">c1 &amp; c2</code></td></tr>
+        <tr><td class="k">Diferencia / simétrica</td><td>Elementos exclusivos de cada lado</td><td><code class="inline">c1 - c2</code> / <code class="inline">c1 ^ c2</code></td></tr>
+        <tr><td class="k">add / remove / discard</td><td>Agregar o quitar elementos</td><td><code class="inline">frutas.discard("uva")</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Quitar duplicados de una lista</td><td><code class="inline">set(lista)</code></td></tr>
+      </table>
+    </div>
+
+    <div class="sinoptico" style="background:var(--pink-soft); border-color:var(--pink);">
+      <h4 style="color:#E5709F;">🧁 Comparativa rápida — Bloque 4 completo</h4>
       <table>
         <tr><th>Estructura</th><th>¿Ordenada?</th><th>¿Mutable?</th><th>¿Duplicados?</th><th>Símbolo</th></tr>
         <tr><td class="k">Lista</td><td>Sí</td><td>Sí</td><td>Sí</td><td><code class="inline">[]</code></td></tr>
         <tr><td class="k">Tupla</td><td>Sí</td><td>No</td><td>Sí</td><td><code class="inline">()</code></td></tr>
         <tr><td class="k">Diccionario</td><td>No*</td><td>Sí</td><td>Claves únicas</td><td><code class="inline">{clave: valor}</code></td></tr>
-        <tr><td class="k">Conjunto</td><td>No</td><td>Sí</td><td>No</td><td><code class="inline">{}</code></td></tr>
+        <tr><td class="k">Conjunto</td><td>No</td><td>Sí</td><td>No</td><td><code class="inline">{}</code> / <code class="inline">set()</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 4.3 ===================== -->
 
+  <!-- ===================== BLOQUE 5 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 5</div>
     <h2>🧩 Funciones</h2>
-    <p class="intro">Las funciones son bloques de código reutilizables que nos permiten encapsular tareas específicas.</p>
+    <p class="intro">Las funciones son bloques de código reutilizables que nos permiten encapsular tareas específicas y ejecutarlas cuando sea necesario. Nos ayudan a organizar nuestro código, evitar la repetición y hacer que nuestros programas sean más modulares y fáciles de mantener.</p>
+
     <h3 class="sub"><span class="ic">📣</span> Definición y llamada de funciones</h3>
+    <p>Para definir una función en Python, utilizamos la palabra clave <code class="inline">def</code> seguida del nombre de la función y paréntesis. Opcionalmente, podemos especificar parámetros dentro de los paréntesis. El bloque de código se indenta después de los dos puntos.</p>
 <pre>def saludo():
     print("¡Hola, mundo!")
 
 saludo()  # Imprime "¡Hola, mundo!"</pre>
-    <h3 class="sub"><span class="ic">🎁</span> Parámetros y argumentos</h3>
-<pre>def saludo(nombre):
-    print(f"¡Hola, {nombre}!")
 
-saludo("Juan")   # Imprime "¡Hola, Juan!"</pre>
+    <h3 class="sub"><span class="ic">🎁</span> Parámetros y argumentos</h3>
+    <p>Las funciones pueden aceptar parámetros, que son valores que se pasan a la función cuando se la llama. Se especifican dentro de los paréntesis en la definición.</p>
+<pre>def saludo(nombre):
+    print(f"¡Hola, {nombre}!")</pre>
+    <p>Al llamar a la función, proporcionamos los argumentos correspondientes a los parámetros:</p>
+<pre>saludo("Juan")   # Imprime "¡Hola, Juan!"
+saludo("María")  # Imprime "¡Hola, María!"</pre>
+
     <h3 class="sub"><span class="ic">↩️</span> Valores de retorno</h3>
+    <p>Las funciones pueden devolver valores utilizando la palabra clave <code class="inline">return</code>. El valor de retorno puede ser utilizado por el código que llama a la función.</p>
 <pre>def suma(a, b):
     return a + b
 
 resultado = suma(3, 4)
 print(resultado)  # Imprime 7</pre>
+
     <h3 class="sub"><span class="ic">🪶</span> Funciones anónimas (lambda)</h3>
+    <p>Python permite crear funciones anónimas o funciones <code class="inline">lambda</code>, que son funciones sin nombre definidas en una sola línea. Se utilizan comúnmente para funciones pequeñas y concisas.</p>
 <pre>cuadrado = lambda x: x ** 2
 print(cuadrado(5))  # Imprime 25</pre>
+
+    <h3 class="sub"><span class="ic">🌐</span> Alcance de las variables (local vs. global)</h3>
+    <p>Las variables definidas dentro de una función tienen un alcance <b>local</b>: solo son accesibles dentro de la función. Las variables definidas fuera de cualquier función tienen un alcance <b>global</b> y pueden ser accedidas desde cualquier parte del programa.</p>
+<pre>def funcion():
+    variable_local = 10
+    print(variable_local)  # Accesible dentro de la función
+
+variable_global = 20
+
+def funcion2():
+    print(variable_global)  # Accesible desde cualquier lugar
+
+funcion()          # Imprime 10
+funcion2()          # Imprime 20
+print(variable_global)  # Imprime 20
+print(variable_local)   # Error: la variable no está definida en este alcance</pre>
+
+    <h3 class="sub"><span class="ic">📖</span> Documentación de funciones (docstrings)</h3>
+    <p>Es una buena práctica documentar nuestras funciones utilizando <b>docstrings</b>: cadenas de texto que describen el propósito, los parámetros y el valor de retorno de una función. Se colocan inmediatamente después de la definición y se encierran entre triples comillas dobles.</p>
+<pre>def area_rectangulo(base, altura):
+    """
+    Calcula el área de un rectángulo.
+
+    Args:
+        base (float): La base del rectángulo.
+        altura (float): La altura del rectángulo.
+
+    Returns:
+        float: El área del rectángulo.
+    """
+    return base * altura</pre>
+
+    <h3 class="sub"><span class="ic">🎒</span> Funciones con número variable de argumentos</h3>
+    <p>Python permite definir funciones que acepten un número variable de argumentos. Esto se logra utilizando el operador <code class="inline">*</code> antes del nombre del parámetro.</p>
+<pre>def suma_variable(*numeros):
+    total = 0
+    for numero in numeros:
+        total += numero
+    return total
+
+print(suma_variable(1, 2, 3))       # Imprime 6
+print(suma_variable(4, 5, 6, 7))    # Imprime 22</pre>
+    <p>Además de las funciones definidas por el usuario, Python también proporciona una amplia gama de funciones incorporadas que podemos utilizar directamente, como <code class="inline">print()</code>, <code class="inline">len()</code>, <code class="inline">range()</code>, entre otras.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> también podés darle <b>valores por defecto</b> a los parámetros, por ejemplo <code class="inline">def saludo(nombre="amigo/a"):</code>, así la función funciona incluso si no le pasás ese argumento. Y si necesitás un número variable de argumentos con <i>nombre</i> (clave=valor), existe además <code class="inline">**kwargs</code>, hermano de <code class="inline">*args</code>, que los recibe como diccionario 🍥.</div>
+    </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 5</h4>
       <table>
@@ -515,118 +1000,2062 @@ print(cuadrado(5))  # Imprime 25</pre>
         <tr><td class="k">Parámetros</td><td>Valores que recibe la función</td><td><code class="inline">saludo(nombre)</code></td></tr>
         <tr><td class="k">return</td><td>Devuelve un valor</td><td><code class="inline">return a + b</code></td></tr>
         <tr><td class="k">lambda</td><td>Función anónima de una línea</td><td><code class="inline">lambda x: x**2</code></td></tr>
+        <tr><td class="k">Alcance</td><td>Local (dentro) vs. global (todo el programa)</td><td>—</td></tr>
+        <tr><td class="k">Docstring</td><td>Documenta la función</td><td><code class="inline">"""..."""</code></td></tr>
+        <tr><td class="k">*args</td><td>Número variable de argumentos</td><td><code class="inline">def f(*n):</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Valores por defecto / **kwargs</td><td><code class="inline">def f(x="a"):</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 5 ===================== -->
 
+  <!-- ===================== BLOQUE 6 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 6</div>
     <h2>🚨 Manejo de errores y excepciones</h2>
-    <p class="intro">Python proporciona un mecanismo para manejar estos errores de manera controlada utilizando el manejo de excepciones.</p>
+    <p class="intro">Cuando escribimos programas, es común encontrarnos con situaciones inesperadas o errores durante la ejecución. Python proporciona un mecanismo para manejar estos errores de manera controlada utilizando el manejo de excepciones. Esto nos permite capturar y manejar errores específicos sin que el programa se detenga abruptamente.</p>
+
     <h3 class="sub"><span class="ic">🐞</span> Errores comunes en Python</h3>
-    <p><b>SyntaxError:</b> El código no sigue las reglas de sintaxis de Python.<br>
-    <b>NameError:</b> Se hace referencia a una variable o función que no ha sido definida.<br>
-    <b>TypeError:</b> Se realiza una operación con tipos de datos incompatibles.<br>
-    <b>IndexError:</b> Se intenta acceder a un índice fuera del rango válido.</p>
+    <p>Antes de sumergirnos en el manejo de excepciones, veamos algunos errores comunes que podés encontrar en Python:</p>
+
+    <h3 class="sub"><span class="ic">✂️</span> Error de sintaxis (SyntaxError)</h3>
+    <p>Ocurre cuando el código no sigue las reglas de sintaxis de Python, como olvidar los dos puntos después de una declaración de función o un bucle.</p>
+<pre>def mi_funcion()  # Falta los dos puntos
+    print("Hola")</pre>
+
+    <h3 class="sub"><span class="ic">❓</span> Error de nombre (NameError)</h3>
+    <p>Ocurre cuando se hace referencia a una variable o función que no ha sido definida.</p>
+<pre>print(variable_no_definida)</pre>
+
+    <h3 class="sub"><span class="ic">🔀</span> Error de tipo (TypeError)</h3>
+    <p>Ocurre cuando se realiza una operación con tipos de datos incompatibles, como intentar sumar un número y una cadena.</p>
+<pre>resultado = 5 + "10"</pre>
+
+    <h3 class="sub"><span class="ic">📏</span> Error de índice (IndexError)</h3>
+    <p>Ocurre cuando se intenta acceder a un índice fuera del rango válido de una lista o secuencia.</p>
+<pre>lista = [1, 2, 3]
+print(lista[3])  # El índice 3 está fuera del rango</pre>
+    <p>Estos son solo algunos ejemplos de errores comunes. Cuando ocurre un error, Python genera una excepción y muestra un mensaje que incluye el tipo de excepción y una descripción del problema.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> leer el mensaje de error (el "traceback") de abajo hacia arriba te ayuda muchísimo a debuggear: la última línea te dice el tipo de error y una descripción, y las líneas de arriba te muestran el camino que siguió el programa hasta llegar ahí. No le tengas miedo al traceback, ¡es tu mejor pista! 🔍</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 6</h4>
+      <table>
+        <tr><th>Error</th><th>¿Cuándo ocurre?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">SyntaxError</td><td>El código no respeta la sintaxis de Python</td><td>Falta <code class="inline">:</code></td></tr>
+        <tr><td class="k">NameError</td><td>Se usa una variable/función no definida</td><td><code class="inline">print(x_no_def)</code></td></tr>
+        <tr><td class="k">TypeError</td><td>Tipos de datos incompatibles</td><td><code class="inline">5 + "10"</code></td></tr>
+        <tr><td class="k">IndexError</td><td>Índice fuera de rango</td><td><code class="inline">lista[3]</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Leer el traceback de abajo hacia arriba</td><td>—</td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 6 ===================== -->
+
+  <!-- ===================== BLOQUE 6.1 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 6.1</div>
+    <h2>🛡️ Manejo de excepciones</h2>
+    <p class="intro">El manejo de excepciones nos permite capturar y manejar errores de manera controlada utilizando las declaraciones <code class="inline">try</code>, <code class="inline">except</code> y, opcionalmente, <code class="inline">finally</code>.</p>
+
     <h3 class="sub"><span class="ic">🎣</span> Try</h3>
+    <p>El bloque <code class="inline">try</code> contiene el código que puede generar una excepción. Si ocurre una excepción dentro del bloque <code class="inline">try</code>, el flujo de ejecución se transfiere al bloque <code class="inline">except</code> correspondiente.</p>
 <pre>try:
-    resultado = 10 / 0
+    # Código que puede generar una excepción
+    resultado = 10 / 0  # División por cero
     print(resultado)
 except ZeroDivisionError:
     print("Error: División por cero")</pre>
+
+    <h3 class="sub"><span class="ic">🧤</span> Except</h3>
+    <p>El bloque <code class="inline">except</code> especifica el tipo de excepción que se desea capturar y manejar. Podés tener múltiples bloques <code class="inline">except</code> para manejar diferentes tipos de excepciones.</p>
+<pre>try:
+    resultado = 10 / 0  # División por cero
+    print(resultado)
+except ZeroDivisionError:
+    print("Error: División por cero")
+except ValueError:
+    print("Error: Valor inválido")</pre>
+
     <h3 class="sub"><span class="ic">🧹</span> Finally</h3>
+    <p>El bloque <code class="inline">finally</code> es opcional y se ejecuta siempre, independientemente de si ocurrió una excepción o no. Se utiliza comúnmente para realizar tareas de limpieza o liberación de recursos.</p>
 <pre>try:
     archivo = open("archivo.txt", "r")
+    # Realizar operaciones con el archivo
 except FileNotFoundError:
     print("Error: Archivo no encontrado")
 finally:
-    archivo.close()</pre>
+    archivo.close()  # Cerrar el archivo siempre, incluso si ocurre una excepción</pre>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> es tentador usar un <code class="inline">except:</code> genérico que atrape "cualquier cosa", pero es mejor práctica capturar excepciones específicas (<code class="inline">ZeroDivisionError</code>, <code class="inline">ValueError</code>, etc.). Así, si aparece un error que no previste, el programa te avisa en vez de esconderlo silenciosamente 🍡.</div>
+    </div>
+
     <div class="sinoptico">
-      <h4>📋 Cuadro sinóptico — Bloque 6</h4>
+      <h4>📋 Cuadro sinóptico — Bloque 6.1</h4>
       <table>
         <tr><th>Bloque</th><th>¿Cuándo se ejecuta?</th><th>Uso típico</th></tr>
         <tr><td class="k">try</td><td>Siempre se intenta primero</td><td>Código que puede fallar</td></tr>
         <tr><td class="k">except</td><td>Si ocurre la excepción indicada</td><td>Manejar el error</td></tr>
         <tr><td class="k">finally</td><td>Siempre, haya o no excepción</td><td>Cerrar archivos/conexiones</td></tr>
+        <tr><td class="k">Tip extra</td><td>Evitar <code class="inline">except:</code> genérico</td><td>Capturar excepciones específicas</td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 6.1 ===================== -->
 
+  <!-- ===================== BLOQUE 6.2 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 6.2</div>
+    <h2>🧵 Excepciones personalizadas</h2>
+    <p class="intro">Además de las excepciones incorporadas en Python, también podés crear tus propias excepciones personalizadas. Esto es útil cuando deseás manejar situaciones específicas de tu programa. Para crear una excepción personalizada, debés crear una clase que herede de la clase base <code class="inline">Exception</code> o de una de sus subclases.</p>
+
+<pre>def funcion():
+    # Código que puede generar una excepción personalizada
+    if condicion:
+        raise Exception("Descripción del error")
+
+try:
+    funcion()
+except Exception as e:
+    print(f"Error: {str(e)}")</pre>
+    <p>En este ejemplo, dentro de <code class="inline">funcion()</code> se verifica una condición y, si se cumple, se genera una excepción utilizando la declaración <code class="inline">raise</code>. En lugar de crear una clase personalizada, se utiliza directamente la clase base <code class="inline">Exception</code>.</p>
+    <p>Luego, se utiliza un bloque <code class="inline">try-except</code> para capturar y manejar la excepción. La variable <code class="inline">e</code> se utiliza para acceder a la descripción del error proporcionada al generar la excepción.</p>
+    <p>El manejo de errores y excepciones es una parte fundamental de la programación en Python: te permite manejar situaciones inesperadas de manera controlada y evitar que tu programa se bloquee o se detenga abruptamente. Al utilizar bloques <code class="inline">try-except</code>, podés capturar y manejar excepciones, especificando diferentes bloques <code class="inline">except</code> para distintos tipos y realizando acciones específicas en cada caso. Además, el bloque <code class="inline">finally</code> te permite ejecutar código de limpieza o liberación de recursos, independientemente de si ocurrió una excepción o no.</p>
+
+    <div class="note note-important">
+      <span class="ic">⚠️</span>
+      <div><b>Importante:</b> considerá los posibles errores que pueden ocurrir en tu código y utilizá el manejo de excepciones adecuado para manejarlos de manera apropiada. Esto hará que tus programas sean más robustos y confiables.</div>
+    </div>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> en vez de usar siempre la clase genérica <code class="inline">Exception</code>, es más prolijo crear tu propia clase heredando de ella, por ejemplo <code class="inline">class SaldoInsuficienteError(Exception): pass</code>. Así, cuando hagas <code class="inline">raise SaldoInsuficienteError("...")</code>, cualquiera que lea el código entiende de inmediato qué salió mal, sin tener que leer el mensaje 🍬.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 6.2</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">raise</td><td>Genera (lanza) una excepción</td><td><code class="inline">raise Exception("...")</code></td></tr>
+        <tr><td class="k">except ... as e</td><td>Captura y guarda el error en una variable</td><td><code class="inline">except Exception as e:</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Crear una clase de excepción propia</td><td><code class="inline">class MiError(Exception): pass</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 6.2 ===================== -->
+
+  <!-- ===================== BLOQUE 7 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 7</div>
     <h2>⌨️ Entradas/salidas</h2>
-    <p class="intro">En Python, la entrada y salida de datos nos permite interactuar con el usuario y manipular archivos.</p>
+    <p class="intro">En Python, la entrada y salida de datos nos permite interactuar con el usuario y manipular archivos. Podemos solicitar información al usuario, mostrar resultados en la pantalla y leer o escribir datos en archivos externos.</p>
+
     <h3 class="sub"><span class="ic">🙋</span> Entrada de datos del usuario</h3>
+    <p>Para obtener información del usuario durante la ejecución del programa, podemos utilizar la función <code class="inline">input()</code>. Esta función muestra un mensaje en la pantalla y espera a que el usuario ingrese un valor.</p>
 <pre>nombre = input("Ingresa tu nombre: ")
-edad = int(input("Ingresa tu edad: "))</pre>
+edad = input("Ingresa tu edad: ")
+
+print("Hola, " + nombre + "!")
+print("Tienes " + edad + " años.")</pre>
+
+    <div class="note note-important">
+      <span class="ic">⚠️</span>
+      <div><b>Importante:</b> la función <code class="inline">input()</code> siempre devuelve una <b>cadena de texto</b>. Si deseás trabajar con otros tipos de datos, como números enteros o flotantes, debés realizar una conversión explícita utilizando funciones como <code class="inline">int()</code> o <code class="inline">float()</code>.</div>
+    </div>
+
+<pre>edad = int(input("Ingresa tu edad: "))
+
+if edad >= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")</pre>
+    <p>En este ejemplo, se solicita la edad y se convierte el valor ingresado a un número entero con <code class="inline">int()</code>. Luego, se usa una estructura condicional para verificar si es mayor o igual a 18.</p>
+
     <h3 class="sub"><span class="ic">🖥️</span> Salida de datos</h3>
+    <p>Para mostrar información en la pantalla, utilizamos la función <code class="inline">print()</code>. Esta función toma uno o más argumentos y los muestra en la consola. Podemos utilizar la <b>f-string</b> (formateo de cadenas) para incrustar variables directamente dentro de una cadena de texto.</p>
 <pre>nombre = "Juan"
 edad = 25
-print(f"Hola, mi nombre es {nombre} y tengo {edad} años.")</pre>
-    <h3 class="sub"><span class="ic">📁</span> Lectura y escritura de archivos</h3>
-<pre>with open("datos.txt", "r") as archivo:
-    contenido = archivo.read()
-    print(contenido)
 
-with open("datos.txt", "w") as archivo:
-    archivo.write("Hola, mundo!")</pre>
+print(f"Hola, mi nombre es {nombre} y tengo {edad} años.")</pre>
+    <p>En este caso, las variables se incrustan dentro de la cadena utilizando llaves <code class="inline">{}</code> y se precede la cadena con la letra <code class="inline">f</code> para indicar que es una f-string.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> cuando conviertas lo que ingresa el usuario con <code class="inline">int()</code>, tené en cuenta que si escribe algo que no es un número (como "veinte"), el programa va a lanzar un <code class="inline">ValueError</code>. Por eso, en programas reales conviene envolver esa conversión en un bloque <code class="inline">try/except</code>, como vimos en el Bloque 6.1 🍒.</div>
+    </div>
+
     <div class="sinoptico">
       <h4>📋 Cuadro sinóptico — Bloque 7</h4>
       <table>
         <tr><th>Concepto</th><th>¿Qué hace?</th><th>Ejemplo</th></tr>
         <tr><td class="k">input()</td><td>Pide datos al usuario (devuelve string)</td><td><code class="inline">input("Nombre: ")</code></td></tr>
+        <tr><td class="k">int() / float()</td><td>Convierte el texto ingresado a número</td><td><code class="inline">int(input(...))</code></td></tr>
         <tr><td class="k">print()</td><td>Muestra información en pantalla</td><td><code class="inline">print("Hola")</code></td></tr>
         <tr><td class="k">f-string</td><td>Incrusta variables en un texto</td><td><code class="inline">f"Hola {nombre}"</code></td></tr>
-        <tr><td class="k">with open()</td><td>Abre y cierra archivos automáticamente</td><td><code class="inline">with open(...) as f:</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Validar conversión con try/except</td><td>Evita <code class="inline">ValueError</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 7 ===================== -->
 
+  <!-- ===================== BLOQUE 7.1 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 7.1</div>
+    <h2>📁 Lectura y escritura de archivos</h2>
+    <p class="intro">Python nos permite leer y escribir datos en archivos externos. Podemos abrir archivos en diferentes modos, como lectura (<code class="inline">"r"</code>), escritura (<code class="inline">"w"</code>) o anexar (<code class="inline">"a"</code>), y realizar operaciones de lectura y escritura.</p>
+
+    <h3 class="sub"><span class="ic">📖</span> Lectura de archivos</h3>
+    <p>Para leer el contenido de un archivo, primero debemos abrirlo utilizando la función <code class="inline">open()</code> en modo de lectura (<code class="inline">"r"</code>). Luego, podemos leer el contenido con métodos como <code class="inline">read()</code> o <code class="inline">readlines()</code>.</p>
+<pre>archivo = open("datos.txt", "r")
+contenido = archivo.read()
+print(contenido)
+archivo.close()</pre>
+    <p>Se abre el archivo en modo lectura, se lee todo el contenido con <code class="inline">read()</code> y se almacena en <code class="inline">contenido</code>. Finalmente, se muestra en pantalla y se cierra el archivo con <code class="inline">close()</code>.</p>
+
+    <h3 class="sub"><span class="ic">✏️</span> Escritura de archivos</h3>
+    <p>Para escribir datos en un archivo, lo abrimos en modo de escritura (<code class="inline">"w"</code>). Si el archivo no existe, se creará automáticamente. Si ya existe, su contenido se sobrescribirá.</p>
+<pre>archivo = open("datos.txt", "w")
+archivo.write("Hola, mundo!")
+archivo.close()</pre>
+
+    <div class="note note-important">
+      <span class="ic">⚠️</span>
+      <div><b>Importante:</b> es importante cerrar siempre los archivos después de utilizarlos, para liberar los recursos del sistema.</div>
+    </div>
+
+    <p>También podés utilizar la declaración <code class="inline">with</code> para manejar la apertura y cierre de archivos de manera automática.</p>
+<pre>with open("datos.txt", "r") as archivo:
+    contenido = archivo.read()
+    print(contenido)</pre>
+    <p>En este caso, el archivo se abre utilizando <code class="inline">with</code> y se cierra automáticamente una vez que se sale del bloque, incluso si ocurre una excepción.</p>
+    <p>Recordá siempre manejar adecuadamente la apertura y cierre de archivos, y considerar las posibles excepciones que pueden ocurrir durante las operaciones de entrada/salida.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> por lo dicho arriba, se recomienda usar siempre <code class="inline">with open(...)</code> en vez de <code class="inline">open()</code> + <code class="inline">close()</code> manual: es más corto y evita que te olvides de cerrar el archivo si el programa corta antes de llegar al <code class="inline">close()</code>. También podés indicar el idioma/acentos correctamente agregando <code class="inline">encoding="utf-8"</code>, por ejemplo <code class="inline">open("datos.txt", "r", encoding="utf-8")</code> 🍰.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 7.1</h4>
+      <table>
+        <tr><th>Modo</th><th>¿Qué hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">"r"</td><td>Lectura</td><td><code class="inline">archivo.read()</code></td></tr>
+        <tr><td class="k">"w"</td><td>Escritura (sobrescribe)</td><td><code class="inline">archivo.write(...)</code></td></tr>
+        <tr><td class="k">"a"</td><td>Anexar al final</td><td>—</td></tr>
+        <tr><td class="k">with open()</td><td>Abre y cierra automáticamente</td><td><code class="inline">with open(...) as f:</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Preferir with + encoding utf-8</td><td><code class="inline">encoding="utf-8"</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 7.1 ===================== -->
+
+  <!-- ===================== BLOQUE 8 ===================== -->
   <div class="block">
     <div class="block-number">BLOQUE 8</div>
     <h2>📦 Importación y creación de módulos</h2>
-    <p class="intro">En Python, un módulo es un archivo que contiene definiciones de funciones, clases y variables que se pueden utilizar en otros programas.</p>
-    <h3 class="sub"><span class="ic">📥</span> Importar módulos</h3>
-<pre>import math
-resultado = math.sqrt(25)
-print(resultado)  # Imprime 5.0
+    <p class="intro">En Python, un módulo es un archivo que contiene definiciones de funciones, clases y variables que se pueden utilizar en otros programas. La importación de módulos nos permite acceder a la funcionalidad definida en otros archivos y reutilizar código de manera eficiente. Además, podemos crear nuestros propios módulos para organizar y modularizar nuestro código.</p>
 
-from math import sqrt
+    <div class="note note-important">
+      <span class="ic">📝</span>
+      <div><b>Ten en cuenta:</b> Python viene con una amplia biblioteca estándar de módulos que proporcionan funcionalidades adicionales. Estos módulos están disponibles sin necesidad de instalarlos por separado.</div>
+    </div>
+
+    <h3 class="sub"><span class="ic">📥</span> Importar módulos</h3>
+    <p>Para utilizar un módulo en nuestro programa, debemos importarlo utilizando la declaración <code class="inline">import</code>. Podemos importar un módulo completo o funciones específicas de un módulo.</p>
+<pre>import math
+
+resultado = math.sqrt(25)
+print(resultado)  # Imprime 5.0</pre>
+    <p>También podemos importar funciones específicas de un módulo utilizando la sintaxis <code class="inline">from módulo import función</code>.</p>
+<pre>from math import sqrt
+
 resultado = sqrt(25)
 print(resultado)  # Imprime 5.0</pre>
+    <p>En este caso, se importa solo la función <code class="inline">sqrt()</code> del módulo <code class="inline">math</code>, lo que nos permite utilizarla directamente sin tener que precederla con el nombre del módulo.</p>
+
     <h3 class="sub"><span class="ic">🎁</span> Funciones y clases de módulos estándar</h3>
+    <p>La biblioteca estándar de Python ofrece una amplia gama de módulos con funciones y clases útiles. Algunos ejemplos comunes incluyen:</p>
 <pre>import random
 import datetime
 
 numero_aleatorio = random.randint(1, 10)
-fecha_actual = datetime.datetime.now()</pre>
-    <h3 class="sub"><span class="ic">🛠️</span> Creación de módulos propios</h3>
+print(numero_aleatorio)  # Imprime un número entero aleatorio entre 1 y 10
+
+fecha_actual = datetime.datetime.now()
+print(fecha_actual)  # Imprime la fecha y hora actual</pre>
+    <p>Estos son solo algunos ejemplos de los muchos módulos disponibles en la biblioteca estándar de Python. Podés consultar la documentación oficial de Python para obtener más información sobre los módulos y sus funcionalidades.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> cuando el nombre de un módulo es largo o lo vas a usar mucho, podés importarlo con un <b>alias</b> usando <code class="inline">as</code>, por ejemplo <code class="inline">import datetime as dt</code>. Es una convención muy usada en librerías populares (como <code class="inline">import numpy as np</code>), y te ahorra escritura sin perder claridad 🍩.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 8</h4>
+      <table>
+        <tr><th>Sintaxis</th><th>¿Qué hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">import modulo</td><td>Importa el módulo completo</td><td><code class="inline">import math</code></td></tr>
+        <tr><td class="k">from m import f</td><td>Importa solo una función/clase</td><td><code class="inline">from math import sqrt</code></td></tr>
+        <tr><td class="k">Biblioteca estándar</td><td>Módulos incluidos, sin instalar</td><td><code class="inline">random</code>, <code class="inline">datetime</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Importar con alias</td><td><code class="inline">import datetime as dt</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 8 ===================== -->
+
+  <!-- ===================== BLOQUE 8.1 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 8.1</div>
+    <h2>🛠️ Creación de módulos propios</h2>
+    <p class="intro">Además de utilizar los módulos estándar de Python, también podemos crear nuestros propios módulos para organizar y reutilizar nuestro código.</p>
+
+    <h3 class="sub"><span class="ic">🧱</span> Crear y utilizar módulos personalizados</h3>
+    <p>Para crear un módulo personalizado, simplemente creamos un nuevo archivo Python con el nombre deseado y definimos las funciones, clases y variables que queremos incluir. Por ejemplo, creamos un archivo (en el mismo directorio donde estamos ejecutando Python) llamado <code class="inline">mi_modulo.py</code> con el siguiente contenido:</p>
 <pre>#mi_modulo.py
 def saludar(nombre):
     print(f"Hola, {nombre}!")
 
 def calcular_suma(a, b):
     return a + b</pre>
-    <h3 class="sub"><span class="ic">🗄️</span> Paquetes</h3>
+    <p>Luego, podemos importar y utilizar las funciones definidas en <code class="inline">mi_modulo.py</code> en otro archivo Python.</p>
+<pre>import mi_modulo
+
+mi_modulo.saludar("Juan")  # Imprime "Hola, Juan!"
+resultado = mi_modulo.calcular_suma(5, 3)
+print(resultado)  # Imprime 8</pre>
+
+    <h3 class="sub"><span class="ic">🗃️</span> Organización del código en módulos</h3>
+    <p>A medida que nuestros programas crecen en tamaño y complejidad, es una buena práctica organizar nuestro código en módulos separados según su funcionalidad. Esto nos permite conservar un código más legible, agrupado en módulos y fácil de mantener.</p>
+<pre># operaciones.py
+def sumar(a, b):
+    return a + b
+
+def restar(a, b):
+    return a - b
+
+
+# utilidades.py
+def imprimir_mensaje(mensaje):
+    print(mensaje)
+
+def obtener_nombre_usuario():
+    return input("Ingresa tu nombre: ")</pre>
+    <p>Luego, podemos importar y utilizar estas funciones en nuestro programa principal.</p>
+<pre>import operaciones
+import utilidades
+
+resultado = operaciones.sumar(5, 3)
+utilidades.imprimir_mensaje(f"El resultado de la suma es: {resultado}")
+
+nombre = utilidades.obtener_nombre_usuario()
+utilidades.imprimir_mensaje(f"Hola, {nombre}!")</pre>
+    <p>Al organizar nuestro código en módulos, podemos reutilizar funciones y mantener un código más estructurado.</p>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> vas a encontrar seguido el bloque <code class="inline">if __name__ == "__main__":</code> al final de los módulos. Sirve para que cierto código solo se ejecute cuando corrés el archivo directamente, pero no cuando lo importás desde otro archivo — muy útil para poner pruebas o ejemplos dentro del propio módulo sin que molesten al importarlo 🧁.</div>
+    </div>
+
+    <div class="sinoptico">
+      <h4>📋 Cuadro sinóptico — Bloque 8.1</h4>
+      <table>
+        <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
+        <tr><td class="k">Módulo propio</td><td>Archivo .py con funciones/clases</td><td><code class="inline">mi_modulo.py</code></td></tr>
+        <tr><td class="k">Uso</td><td>Se importa como cualquier módulo</td><td><code class="inline">import mi_modulo</code></td></tr>
+        <tr><td class="k">Organización</td><td>Separar código por funcionalidad</td><td><code class="inline">operaciones.py</code>, <code class="inline">utilidades.py</code></td></tr>
+        <tr><td class="k">Tip extra</td><td>Código que solo corre al ejecutar directo</td><td><code class="inline">if __name__ == "__main__":</code></td></tr>
+      </table>
+    </div>
+  </div>
+  <!-- ===================== FIN BLOQUE 8.1 ===================== -->
+
+  <!-- ===================== BLOQUE 8.2 ===================== -->
+  <div class="block">
+    <div class="block-number">BLOQUE 8.2</div>
+    <h2>🗄️ Paquetes</h2>
+    <p class="intro">Un paquete es una forma de organizar módulos relacionados en una estructura jerárquica de directorios. Los paquetes nos permiten agrupar módulos relacionados y evitar conflictos de nombres entre módulos.</p>
+
+    <h3 class="sub"><span class="ic">🏗️</span> Crear y utilizar paquetes</h3>
+    <p>Para crear un paquete, creamos un directorio con el nombre deseado y agregamos un archivo especial llamado <code class="inline">__init__.py</code> dentro del directorio. Este archivo puede estar vacío o contener código de inicialización del paquete. Por ejemplo, creamos un directorio llamado <code class="inline">mi_paquete</code> con la siguiente estructura:</p>
 <pre>mi_paquete/
     __init__.py
     modulo1.py
-    modulo2.py
+    modulo2.py</pre>
+    <p>Luego, podemos importar y utilizar los módulos del paquete en nuestro programa.</p>
+<pre>from mi_paquete import modulo1, modulo2
 
-from mi_paquete import modulo1, modulo2</pre>
+modulo1.funcion1()
+modulo2.funcion2()</pre>
+    <p>En este ejemplo, se importan los módulos <code class="inline">modulo1</code> y <code class="inline">modulo2</code> del paquete <code class="inline">mi_paquete</code> y se utilizan las funciones definidas en ellos.</p>
+
+    <div class="note note-conclusion">
+      <span class="ic">🎯</span>
+      <div><b>Conclusión:</b> la importación y creación de módulos y paquetes en Python nos permite organizar y reutilizar nuestro código de manera eficiente. Al modularizar nuestro código, podemos mantener un código más legible, estructurado y fácil de mantener. Recordá explorar la biblioteca estándar de Python y aprovechar los módulos existentes, que pueden facilitarte muchas tareas comunes. Además, no dudes en crear tus propios módulos y paquetes para organizar y reutilizar tu código de manera efectiva.</div>
+    </div>
+
+    <div class="note note-tip">
+      <span class="ic">🌟</span>
+      <div><b>Extra complementario:</b> más allá de la biblioteca estándar y tus propios módulos, existe un mundísimo de <b>paquetes de terceros</b> (creados por la comunidad) que se instalan con el comando <code class="inline">pip install nombre_paquete</code> desde la terminal — por ejemplo <code class="inline">pip install requests</code>. Es la forma en la que vas a sumar herramientas como pandas, numpy o Django a tus proyectos más adelante 🌸.</div>
+    </div>
+
     <div class="sinoptico">
-      <h4>📋 Cuadro sinóptico — Bloque 8 completo</h4>
+      <h4>📋 Cuadro sinóptico — Bloque 8.2</h4>
       <table>
         <tr><th>Concepto</th><th>¿Qué es / hace?</th><th>Ejemplo</th></tr>
-        <tr><td class="k">import modulo</td><td>Importa el módulo completo</td><td><code class="inline">import math</code></td></tr>
-        <tr><td class="k">from m import f</td><td>Importa solo una función/clase</td><td><code class="inline">from math import sqrt</code></td></tr>
-        <tr><td class="k">Módulo propio</td><td>Archivo .py con funciones/clases</td><td><code class="inline">mi_modulo.py</code></td></tr>
         <tr><td class="k">Paquete</td><td>Carpeta con módulos relacionados</td><td><code class="inline">mi_paquete/</code></td></tr>
+        <tr><td class="k">__init__.py</td><td>Marca la carpeta como paquete</td><td>Puede estar vacío</td></tr>
+        <tr><td class="k">Importar del paquete</td><td>Trae módulos específicos</td><td><code class="inline">from mi_paquete import modulo1</code></td></tr>
         <tr><td class="k">Tip extra</td><td>Instalar paquetes de terceros</td><td><code class="inline">pip install requests</code></td></tr>
       </table>
     </div>
   </div>
+  <!-- ===================== FIN BLOQUE 8.2 ===================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>🐍 Python de cero a portfolio 🌸</title>
+<style>
 
+  :root{
+    --pink: #ffd6e8;
+    --pink-deep: #ff9dc4;
+    --lilac: #e5d4ff;
+    --lilac-deep: #c9a6ff;
+    --mint: #cdf5e0;
+    --mint-deep: #8fe3b5;
+    --butter: #fff3c4;
+    --butter-deep: #ffe083;
+    --sky: #cfeeff;
+    --sky-deep: #9bd8ff;
+    --peach: #ffe2cc;
+    --peach-deep: #ffbe8a;
+    --red-soft: #ffd0d0;
+    --red-deep: #ff8a8a;
+    --green-soft: #d7f5df;
+    --green-deep: #7fd99a;
+    --ink: #6b5b73;
+    --ink-soft: #9987a0;
+    --card-bg: #fffdfb;
+  }
+
+  @page { margin: 16mm 12mm; }
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: linear-gradient(180deg, #fdf2f8 0%, #f3e8ff 45%, #e8f7ff 100%);
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    color: var(--ink);
+    padding: 40px 18px 80px;
+  }
+
+  .wrap{ max-width: 920px; margin: 0 auto; }
+
+  header{ text-align:center; margin-bottom: 26px; }
+  .cloud-title{
+    display:inline-block;
+    background: var(--card-bg);
+    border-radius: 40px;
+    padding: 22px 40px;
+    box-shadow: 0 8px 0 var(--pink-deep), 0 12px 20px rgba(255,157,196,0.25);
+    border: 3px dashed var(--pink-deep);
+  }
+  h1{ margin:0; font-size: 2em; color: #d6699a; }
+  .subtitle{ margin-top: 10px; color: var(--ink-soft); font-size: 0.95em; }
+
+  nav.pills{
+    display:flex; justify-content:center; gap:10px; flex-wrap:wrap;
+    margin: 22px 0 8px;
+  }
+  nav.pills a{
+    text-decoration:none; color:#fff; font-weight:bold; font-size: 0.82em;
+    padding: 8px 16px; border-radius: 18px;
+  }
+  nav.pills a:nth-child(1){ background: var(--pink-deep); box-shadow: 0 3px 0 #e07aa8; }
+  nav.pills a:nth-child(2){ background: var(--lilac-deep); box-shadow: 0 3px 0 #a87ee0; }
+  nav.pills a:nth-child(3){ background: var(--sky-deep); box-shadow: 0 3px 0 #6bb9e8; }
+  nav.pills a:nth-child(4){ background: var(--mint-deep); box-shadow: 0 3px 0 #5fc98e; }
+  nav.pills a:nth-child(5){ background: var(--butter-deep); color:#7a5d00; box-shadow: 0 3px 0 #e0b84a; }
+  nav.pills a:nth-child(6){ background: var(--peach-deep); box-shadow: 0 3px 0 #ff9d4d; }
+  nav.pills a:nth-child(7){ background: var(--lilac-deep); box-shadow: 0 3px 0 #a87ee0; }
+  nav.pills a:nth-child(8){ background: #b9a4e8; box-shadow: 0 3px 0 #8f74c9; }
+
+  .section-title{ text-align:center; margin: 50px 0 22px; scroll-margin-top: 20px; }
+  .section-title h2{
+    display:inline-block; background: var(--card-bg); border: 3px solid var(--pink-deep);
+    color:#d6699a; padding: 10px 28px; border-radius: 20px; font-size:1.3em;
+    box-shadow: 0 5px 0 var(--pink-deep);
+  }
+  .section-intro{
+    max-width: 640px; margin: 0 auto 20px; text-align:center;
+    font-size: 0.92em; color: var(--ink-soft);
+  }
+
+  /* step cards */
+  .steps{ display:flex; flex-direction:column; gap: 12px; }
+  .step{
+    background: var(--card-bg);
+    border: 2.5px solid var(--lilac);
+    border-radius: 18px;
+    padding: 14px 18px;
+    display:flex; gap: 14px; align-items:flex-start;
+    box-shadow: 0 4px 0 var(--lilac);
+  }
+  .step-num{
+    flex-shrink:0;
+    background: var(--lilac-deep); color:#fff; font-weight:bold;
+    width: 30px; height:30px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size: 0.95em;
+  }
+  .step h3{ margin: 0 0 4px; font-size: 1em; color:#7a5da0; }
+  .step p{ margin:0; font-size: 0.88em; line-height:1.45; }
+
+  code, pre{ font-family: 'Consolas', 'Courier New', monospace; }
+  .code-box{
+    background: #fbf6ff; border: 1.5px dashed var(--lilac-deep); border-radius: 10px;
+    padding: 8px 12px; font-size: 0.82em; color: #6a4f8f; white-space: pre-wrap; margin-top:6px;
+  }
+  .code-box.term{ background:#2d2438; color:#dff5df; border-color:#6a4f8f; }
+  .code-box.term .prompt{ color:#c9a6ff; }
+
+  .note-box{
+    background: var(--butter); border: 1.5px dashed var(--butter-deep); border-radius: 10px;
+    padding: 8px 12px; font-size: 0.82em; color: #7a5d00; margin-top:8px;
+  }
+
+  /* compare boxes */
+  .compare{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin: 14px 0; }
+  @media (max-width:640px){ .compare{ grid-template-columns: 1fr; } }
+  .compare-box{ border-radius:16px; padding:14px 16px; }
+  .compare-box.bad{ background: var(--red-soft); border: 2px solid var(--red-deep); }
+  .compare-box.good{ background: var(--green-soft); border: 2px solid var(--green-deep); }
+  .compare-box .label{ font-weight:bold; font-size:0.85em; margin-bottom:6px; display:flex; align-items:center; gap:6px; }
+  .compare-box.bad .label{ color:#c94f4f; }
+  .compare-box.good .label{ color:#3a9b5c; }
+  .compare-box .code-box{ background: rgba(255,255,255,0.6); border-color: rgba(0,0,0,0.15); color: var(--ink); }
+
+  /* error anatomy */
+  .traceback{
+    background:#2d2438; color:#f4e9ff; border-radius:14px; padding:16px 18px;
+    font-size:0.82em; line-height:1.7; margin: 14px 0; overflow-x:auto;
+  }
+  .traceback .tb-line{ display:block; }
+  .traceback .highlight{ color:#ffd6e8; font-weight:bold; }
+  .traceback .arrow{ color:#8fe3b5; }
+
+  /* tables */
+  .sym-wrap{
+    background: var(--card-bg); border: 3px solid var(--peach-deep); border-radius: 22px;
+    padding: 18px 22px; box-shadow: 0 6px 0 var(--peach-deep); margin: 18px 0;
+  }
+  table.sym-table{ width:100%; border-collapse: collapse; font-size: 0.88em; }
+  table.sym-table th{ background: var(--peach-deep); color:#fff; padding: 8px 10px; text-align:left; }
+  table.sym-table td{ padding: 7px 10px; border-bottom: 1.5px dotted var(--peach); vertical-align:top; }
+  table.sym-table td.sym{ font-family:'Consolas','Courier New',monospace; font-weight:bold; color:#c9660c; white-space:nowrap; }
+  table.sym-table tr:nth-child(even) td{ background: #fff9f2; }
+
+  /* synoptic grid */
+  .synoptic{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  @media (max-width:640px){ .synoptic{ grid-template-columns: 1fr; } }
+  .syn-card{
+    border-radius: 20px; padding: 16px 18px; box-shadow: 0 5px 0 rgba(0,0,0,0.06);
+  }
+  .syn-card h4{ margin:0 0 8px; font-size:1.05em; display:flex; align-items:center; gap:6px; }
+  .syn-card ul{ margin:0; padding-left: 18px; font-size:0.86em; line-height:1.6; }
+  .syn-card.c1{ background: var(--sky); border: 2px solid var(--sky-deep); }
+  .syn-card.c1 h4{ color:#2b7ea8; }
+  .syn-card.c2{ background: var(--mint); border: 2px solid var(--mint-deep); }
+  .syn-card.c2 h4{ color:#2e8a58; }
+  .syn-card.c3{ background: var(--lilac); border: 2px solid var(--lilac-deep); }
+  .syn-card.c3 h4{ color:#7a4fc9; }
+  .syn-card.c4{ background: var(--butter); border: 2px solid var(--butter-deep); }
+  .syn-card.c4 h4{ color:#a17700; }
+
+  /* exercise cards */
+  .exercise{
+    background: var(--card-bg); border: 2.5px solid var(--mint-deep); border-radius: 18px;
+    padding: 16px 20px; margin-bottom: 16px; box-shadow: 0 5px 0 var(--mint-deep);
+  }
+  .exercise h4{ margin:0 0 8px; color:#2e8a58; font-size:1.05em; }
+  .exercise .consigna{ font-size:0.9em; margin-bottom:8px; }
+  details{ margin-top:8px; }
+  summary{
+    cursor:pointer; font-size:0.85em; font-weight:bold; color:#7a5da0;
+    background: var(--lilac); display:inline-block; padding:5px 12px; border-radius:12px;
+  }
+
+  .checklist{ list-style:none; padding:0; margin:0; }
+  .checklist li{
+    background: var(--card-bg); border: 2px solid var(--pink); border-radius: 12px;
+    padding: 8px 14px; margin-bottom:8px; font-size:0.88em; display:flex; gap:8px; align-items:center;
+  }
+  .checklist li::before{ content:"☐"; color: var(--pink-deep); font-size:1.1em; }
+
+  footer{ text-align:center; margin-top: 44px; color: var(--ink-soft); font-size: 0.85em; }
+  .stars{ letter-spacing: 6px; color: var(--pink-deep); margin-bottom: 6px; }
+
+  @media print{
+    body{ background:#fff; padding:0; }
+    nav.pills{ display:none; }
+    .step, .exercise, .sym-wrap{ box-shadow:none; }
+    details{ page-break-inside: avoid; }
+  }
+
+
+  /* ===== extra rules merged from diccionario ===== */
+
+  .legend{
+    display:flex; justify-content:center; gap: 18px; flex-wrap: wrap;
+    margin: 18px 0 10px; font-size: 0.82em; color: var(--ink-soft);
+  }
+  .legend span{
+    display:flex; align-items:center; gap:6px;
+    background: var(--card-bg); padding: 6px 12px; border-radius: 20px;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.04);
+  }
+  .dot{ width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .dot.def{ background: var(--sky-deep); }
+  .dot.use{ background: var(--mint-deep); }
+  .dot.ej{ background: var(--butter-deep); }
+
+  .grid-cards{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 640px){ .grid-cards{ grid-template-columns: 1fr; } }
+
+  .letter-flag{
+    display:inline-flex; align-items:center; gap:10px;
+    background: var(--lilac-deep); color:#fff; font-weight:bold; font-size: 1.25em;
+    padding: 6px 22px; border-radius: 16px 16px 0 16px;
+    box-shadow: 0 4px 0 #a87ee0; margin-bottom: 12px;
+  }
+  .letter-flag::before{ content:"✿ "; }
+
+  .term-card{
+    background: var(--card-bg);
+    border: 2.5px solid var(--pink);
+    border-radius: 20px;
+    padding: 14px 18px;
+    box-shadow: 0 5px 0 var(--pink), 0 8px 14px rgba(0,0,0,0.04);
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .term-name{
+    font-size: 1.1em; font-weight: bold; color: #b6579c;
+    margin: 0 0 8px 0; display:flex; align-items:center; gap: 6px;
+  }
+  .row{ display:flex; gap: 8px; margin-bottom: 6px; align-items:flex-start; line-height: 1.4; }
+  .tag{
+    flex-shrink:0; font-size: 0.68em; font-weight:bold; color:#fff;
+    padding: 3px 9px; border-radius: 10px; margin-top: 1px; white-space: nowrap;
+  }
+  .tag.def{ background: var(--sky-deep); }
+  .tag.use{ background: var(--mint-deep); }
+  .tag.ej{ background: var(--butter-deep); color:#7a5d00; }
+  .row p{ margin:0; font-size: 0.88em; }
+
+  /* ===== part banners (used to open each of the 3 big parts) ===== */
+  .part-banner{
+    text-align:center;
+    margin-bottom: 30px;
+  }
+  .part-banner h2{
+    display:inline-block;
+    background: var(--card-bg);
+    border-radius: 30px;
+    padding: 14px 34px;
+    box-shadow: 0 6px 0 var(--pink-deep), 0 10px 16px rgba(255,157,196,0.2);
+    border: 3px dashed var(--pink-deep);
+    color: #d6699a;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .part-banner p{
+    margin: 10px 0 0;
+    color: var(--ink-soft);
+    font-size: 0.9em;
+  }
+  .part-banner.gb h2{ border-color: var(--mint-deep); box-shadow: 0 6px 0 var(--mint-deep), 0 10px 16px rgba(143,227,181,0.25); }
+  .part-banner.pb h2{ border-color: var(--peach-deep); box-shadow: 0 6px 0 var(--peach-deep), 0 10px 16px rgba(255,190,138,0.25); }
+
+  /* ===== top-level nav (jump between the 3 parts) ===== */
+  .top-nav{
+    display:flex; justify-content:center; gap:14px; flex-wrap:wrap;
+    margin: 26px 0 10px;
+  }
+  .top-nav a{
+    text-decoration:none; color:#fff; font-weight:bold; font-size: 1em;
+    padding: 12px 26px; border-radius: 24px;
+  }
+  .top-nav a:nth-child(1){ background: var(--pink-deep); box-shadow: 0 4px 0 #e07aa8; }
+  .top-nav a:nth-child(2){ background: var(--mint-deep); box-shadow: 0 4px 0 #5fc98e; }
+  .top-nav a:nth-child(3){ background: var(--peach-deep); box-shadow: 0 4px 0 #ff9d4d; }
+
+  hr.part-divider{
+    border: none;
+    border-top: 3px dashed var(--lilac-deep);
+    margin: 56px 0;
+  }
+
+  /* ===== folder tree (used in "primer proyecto") ===== */
+  .folder-tree{
+    background: #2d2438; color:#f4e9ff; border-radius:14px; padding:16px 20px;
+    font-family: 'Consolas','Courier New',monospace; font-size:0.85em; line-height:1.8;
+    margin: 14px 0;
+  }
+  .folder-tree .folder{ color:#ffd6e8; font-weight:bold; }
+  .folder-tree .file{ color:#8fe3b5; }
+  .folder-tree .comment{ color:#9987a0; }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="cloud-title">
+      <h1>🐍 Python: de cero a portfolio 🌸</h1>
+      <div class="subtitle">diccionario ✧ primeros pasos ✧ tu primer proyecto en GitHub</div>
+    </div>
+    <div class="top-nav">
+      <a href="#diccionario">🐍 Diccionario</a>
+      <a href="#primerospasos">🐣 Primeros pasos</a>
+      <a href="#proyecto">🚀 Primer proyecto y portfolio</a>
+      <a href="#apuntes" style="background:#b9a4e8; box-shadow:0 4px 0 #8f74c9;">📝 Mis apuntes</a>
+    </div>
+  </header>
+
+  <section id="diccionario">
+<div class="part-banner db">
+      <h2>🐍 Parte 1 — Diccionario Python</h2>
+      <p>vocabulario esencial: Python, HTML/CSS y símbolos</p>
+      <nav class="pills">
+        <a href="#python">🐍 Diccionario Python</a>
+        <a href="#htmlcss">🎨 HTML &amp; CSS</a>
+        <a href="#simbolos">🔣 Símbolos</a>
+      </nav>
+      <div class="legend">
+        <span><span class="dot def"></span> Significado</span>
+        <span><span class="dot use"></span> Para qué sirve</span>
+        <span><span class="dot ej"></span> Ejemplo</span>
+      </div>
+    </div>
+
+  <!-- ============ PYTHON ============ -->
+  <div class="section-title" id="python"><h2>🐍 Diccionario Python — A a Z</h2></div>
+
+  <!-- A -->
+  <div class="letter-block" id="p-a">
+    <div class="letter-flag">A</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 and</p>
+        <div class="row"><span class="tag def">Significado</span><p>Operador lógico que devuelve True solo si ambas condiciones son verdaderas.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Combinar varias condiciones en un mismo if.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">if edad >= 18 and tiene_dni:
+    print("puede votar")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 as</p>
+        <div class="row"><span class="tag def">Significado</span><p>Palabra clave para darle un alias (otro nombre) a algo importado.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Acortar nombres largos de módulos o archivos.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">import pandas as pd</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 algoritmo</p>
+        <div class="row"><span class="tag def">Significado</span><p>Conjunto de pasos ordenados para resolver un problema.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Es la lógica que después se traduce en código.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="note-box">Ej: pasos para hacer un té → hervir agua, agregar la bolsita, esperar, servir.</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 archivo</p>
+        <div class="row"><span class="tag def">Significado</span><p>Documento guardado en la computadora (un .py, un .txt, etc).</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Guardar código, o leer y escribir datos.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">archivo = open("datos.txt")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 argumento</p>
+        <div class="row"><span class="tag def">Significado</span><p>Valor real que le pasás a una función cuando la llamás.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Que una misma función trabaje con distintos datos cada vez.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">saludar("Mica")  # "Mica" es el argumento</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 asignación</p>
+        <div class="row"><span class="tag def">Significado</span><p>Acción de guardar un valor en una variable usando el signo =.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Crear y actualizar el contenido de una variable.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">edad = 22</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- B -->
+  <div class="letter-block" id="p-b">
+    <div class="letter-flag">B</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 bool / booleano</p>
+        <div class="row"><span class="tag def">Significado</span><p>Tipo de dato que solo puede valer True o False.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Tomar decisiones dentro del programa.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">esta_lloviendo = True</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 break</p>
+        <div class="row"><span class="tag def">Significado</span><p>Instrucción que corta un bucle antes de que termine naturalmente.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Salir de un for o while cuando se cumple algo.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">for n in range(10):
+    if n == 5:
+        break</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- C -->
+  <div class="letter-block" id="p-c">
+    <div class="letter-flag">C</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 cadena / str</p>
+        <div class="row"><span class="tag def">Significado</span><p>Tipo de dato que representa texto, se escribe entre comillas.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Guardar y manipular texto como nombres o mensajes.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">mensaje = "Hola, Mica"</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 class</p>
+        <div class="row"><span class="tag def">Significado</span><p>Palabra clave para definir una clase, el molde de un objeto.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Organizar el código con programación orientada a objetos.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">class Persona:
+    pass</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 código</p>
+        <div class="row"><span class="tag def">Significado</span><p>Conjunto de instrucciones escritas en un lenguaje de programación.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Es lo que el programa ejecuta paso a paso.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">print("Hola")  # esto es código</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 comentario</p>
+        <div class="row"><span class="tag def">Significado</span><p>Texto que Python ignora al ejecutar, empieza con #.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Explicar o aclarar qué hace una parte del código.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box"># esto calcula el doble
+doble = numero * 2</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 condición</p>
+        <div class="row"><span class="tag def">Significado</span><p>Expresión que se evalúa como verdadera o falsa dentro de un if.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Decidir qué camino toma el programa.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">if nota >= 6:
+    print("aprobaste")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 consola</p>
+        <div class="row"><span class="tag def">Significado</span><p>Pantalla donde se ve lo que imprime el programa y se escriben comandos.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Ejecutar y probar código, ver resultados.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="note-box">La ventana negra (o de color) donde aparece el resultado de tus print().</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 continue</p>
+        <div class="row"><span class="tag def">Significado</span><p>Salta a la siguiente vuelta del bucle sin ejecutar el resto del bloque.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Saltear un caso puntual dentro de un bucle.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">for n in range(5):
+    if n == 2:
+        continue
+    print(n)</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- D -->
+  <div class="letter-block" id="p-d">
+    <div class="letter-flag">D</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 def</p>
+        <div class="row"><span class="tag def">Significado</span><p>Palabra clave para definir una función.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Marca el comienzo del bloque de una función.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">def saludar():
+    print("hola")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 dict / diccionario</p>
+        <div class="row"><span class="tag def">Significado</span><p>Colección de pares clave-valor, escrita entre llaves { }.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Guardar datos asociados a un nombre en vez de a una posición.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">persona = {"nombre": "Mica"}</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- E -->
+  <div class="letter-block" id="p-e">
+    <div class="letter-flag">E</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 elif</p>
+        <div class="row"><span class="tag def">Significado</span><p>Contracción de "else if", agrega una condición adicional.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Chequear varias condiciones en cadena.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">if nota >= 8:
+    print("muy bien")
+elif nota >= 6:
+    print("aprobado")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 else</p>
+        <div class="row"><span class="tag def">Significado</span><p>Bloque que se ejecuta cuando ninguna condición anterior se cumplió.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Define el caso "por defecto".</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">if llueve:
+    print("paraguas")
+else:
+    print("sol")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 error</p>
+        <div class="row"><span class="tag def">Significado</span><p>Problema que impide que el programa funcione correctamente.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Leerlo te dice exactamente qué corregir.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">print(1/0)  # ZeroDivisionError</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 except</p>
+        <div class="row"><span class="tag def">Significado</span><p>Bloque que captura un error dentro de un try.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Evitar que el programa se detenga bruscamente.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">try:
+    1/0
+except ZeroDivisionError:
+    print("no se puede")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 expresión</p>
+        <div class="row"><span class="tag def">Significado</span><p>Combinación de valores y operadores que Python puede evaluar.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Calcular resultados.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">3 + 4 * 2  # expresión</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- F -->
+  <div class="letter-block" id="p-f">
+    <div class="letter-flag">F</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 False</p>
+        <div class="row"><span class="tag def">Significado</span><p>Valor booleano que representa "falso".</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Se usa en condiciones y comparaciones.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">activo = False</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 float</p>
+        <div class="row"><span class="tag def">Significado</span><p>Tipo de dato numérico con decimales.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Representar números que no son enteros.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">altura = 1.65</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 for</p>
+        <div class="row"><span class="tag def">Significado</span><p>Palabra clave que crea un bucle que recorre un iterable.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Repetir una acción una vez por cada elemento.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">for letra in "hola":
+    print(letra)</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 from</p>
+        <div class="row"><span class="tag def">Significado</span><p>Palabra clave para importar solo una parte de un módulo.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Evitar importar el módulo completo.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">from math import sqrt</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 función</p>
+        <div class="row"><span class="tag def">Significado</span><p>Bloque de código reutilizable que realiza una tarea específica.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Evita repetir código y organiza el programa.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">def sumar(a, b):
+    return a + b</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- I -->
+  <div class="letter-block" id="p-i">
+    <div class="letter-flag">I</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 if</p>
+        <div class="row"><span class="tag def">Significado</span><p>Palabra clave que inicia una estructura condicional.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Ejecutar código solo si se cumple una condición.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">if hora > 20:
+    print("es de noche")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 import</p>
+        <div class="row"><span class="tag def">Significado</span><p>Trae código de otro módulo o librería para poder usarlo.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Reutilizar funciones ya creadas sin escribirlas de nuevo.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">import math</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 in</p>
+        <div class="row"><span class="tag def">Significado</span><p>Operador que verifica si un valor está dentro de una colección.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Buscar elementos dentro de listas, strings, etc.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">"a" in "casa"  # True</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 input()</p>
+        <div class="row"><span class="tag def">Significado</span><p>Función que pide al usuario que escriba algo por teclado.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Recibir datos desde la consola.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">nombre = input("¿Nombre? ")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 int</p>
+        <div class="row"><span class="tag def">Significado</span><p>Tipo de dato numérico entero, sin decimales.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Representar cantidades enteras.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">edad = 22</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 iterable</p>
+        <div class="row"><span class="tag def">Significado</span><p>Objeto que puede recorrerse elemento por elemento.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Se puede recorrer con un for.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">for x in [1, 2, 3]:
+    print(x)</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- L -->
+  <div class="letter-block" id="p-l">
+    <div class="letter-flag">L</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 list / lista</p>
+        <div class="row"><span class="tag def">Significado</span><p>Colección ordenada y modificable de elementos, entre corchetes [ ].</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Guardar varios valores relacionados en una sola variable.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">colores = ["rosa", "lila"]</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- M -->
+  <div class="letter-block" id="p-m">
+    <div class="letter-flag">M</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 método</p>
+        <div class="row"><span class="tag def">Significado</span><p>Es una función que pertenece a un objeto.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Define una acción que puede realizar ese objeto.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">"hola".upper()  # método</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- N -->
+  <div class="letter-block" id="p-n">
+    <div class="letter-flag">N</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 None</p>
+        <div class="row"><span class="tag def">Significado</span><p>Valor especial que representa "nada" o ausencia de valor.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Inicializar variables vacías o indicar que algo no devuelve nada.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">resultado = None</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- O -->
+  <div class="letter-block" id="p-o">
+    <div class="letter-flag">O</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 operador</p>
+        <div class="row"><span class="tag def">Significado</span><p>Símbolo que realiza una operación entre valores (+, -, ==, etc).</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Hacer cálculos y comparaciones.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">5 + 3  # + es un operador</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- P -->
+  <div class="letter-block" id="p-p">
+    <div class="letter-flag">P</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 parámetro</p>
+        <div class="row"><span class="tag def">Significado</span><p>Nombre de la variable que recibe una función al ser definida.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Define qué información necesita la función.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">def saludar(nombre): ...</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 print()</p>
+        <div class="row"><span class="tag def">Significado</span><p>Función que muestra texto o valores en la consola.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Mostrar resultados o mensajes al usuario.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">print("Hola Mica")</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 programa</p>
+        <div class="row"><span class="tag def">Significado</span><p>Conjunto de instrucciones escritas para que la computadora las ejecute.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Es el resultado final de todo el código que escribís.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="note-box">Un archivo .py entero es, en conjunto, un programa.</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- R -->
+  <div class="letter-block" id="p-r">
+    <div class="letter-flag">R</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 range()</p>
+        <div class="row"><span class="tag def">Significado</span><p>Función que genera una secuencia de números.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Se usa con for para repetir algo un número de veces.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">for i in range(5):
+    print(i)</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 return</p>
+        <div class="row"><span class="tag def">Significado</span><p>Hace que una función devuelva un valor como resultado.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Usar el resultado de una función en otra parte del programa.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">def cuadrado(n):
+    return n * n</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- S -->
+  <div class="letter-block" id="p-s">
+    <div class="letter-flag">S</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 set</p>
+        <div class="row"><span class="tag def">Significado</span><p>Colección desordenada de elementos únicos, sin duplicados.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Guardar valores sin repetir.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">numeros = {1, 2, 2, 3}  # {1, 2, 3}</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 sintaxis</p>
+        <div class="row"><span class="tag def">Significado</span><p>Reglas que definen cómo se debe escribir el código correctamente.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Si no se respeta, Python tira un error de sintaxis.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">if True:
+    print("ok")  # los : son sintaxis</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 string</p>
+        <div class="row"><span class="tag def">Significado</span><p>Es lo mismo que "cadena / str" — el tipo de dato texto.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Ver la entrada "cadena / str" en la letra C.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="note-box">string = string en inglés = cadena en español 🌸</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- T -->
+  <div class="letter-block" id="p-t">
+    <div class="letter-flag">T</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 tipo de dato</p>
+        <div class="row"><span class="tag def">Significado</span><p>Categoría que indica qué clase de valor es una variable.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Determina qué operaciones se pueden hacer con ese valor.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">type(5)  # &lt;class 'int'&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 True</p>
+        <div class="row"><span class="tag def">Significado</span><p>Valor booleano que representa "verdadero".</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Se usa en condiciones y comparaciones.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">activo = True</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 tuple / tupla</p>
+        <div class="row"><span class="tag def">Significado</span><p>Colección ordenada que, a diferencia de la lista, no se puede modificar.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Guardar datos que no deberían cambiar.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">coordenadas = (10, 20)</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 type()</p>
+        <div class="row"><span class="tag def">Significado</span><p>Función que muestra el tipo de dato de un valor.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Chequear con qué tipo de dato estás trabajando.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">type("hola")  # str</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- V -->
+  <div class="letter-block" id="p-v">
+    <div class="letter-flag">V</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 valor</p>
+        <div class="row"><span class="tag def">Significado</span><p>El dato concreto que tiene una variable o expresión.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Es lo que se guarda, compara o calcula.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">edad = 22  # 22 es el valor</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 variable</p>
+        <div class="row"><span class="tag def">Significado</span><p>Espacio con nombre que guarda un valor en la memoria del programa.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Guardar y reutilizar datos a lo largo del programa.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">nombre = "Mica"</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- W -->
+  <div class="letter-block" id="p-w">
+    <div class="letter-flag">W</div>
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🐾 while</p>
+        <div class="row"><span class="tag def">Significado</span><p>Crea un bucle que se repite mientras una condición sea verdadera.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Repetir código un número indefinido de veces.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">n = 0
+while n < 3:
+    print(n)
+    n += 1</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🐾 with</p>
+        <div class="row"><span class="tag def">Significado</span><p>Abre un bloque de contexto, usado comúnmente con archivos.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Asegura que un archivo se cierre automáticamente al terminar.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">with open("datos.txt") as a:
+    contenido = a.read()</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ HTML/CSS ============ -->
+  <div class="section-title" id="htmlcss"><h2>🎨 HTML &amp; CSS esenciales</h2></div>
+
+  <div class="letter-block">
+    <div class="grid-cards">
+
+      <div class="term-card">
+        <p class="term-name">🎀 HTML</p>
+        <div class="row"><span class="tag def">Significado</span><p>Lenguaje de marcado que define la estructura de una página web.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Crea los elementos: títulos, párrafos, imágenes.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;h1&gt;Hola&lt;/h1&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 CSS</p>
+        <div class="row"><span class="tag def">Significado</span><p>Lenguaje que define el estilo visual de la página.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Darle diseño (colores, tamaños) a lo que estructura HTML.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">h1 { color: pink; }</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 tag / etiqueta</p>
+        <div class="row"><span class="tag def">Significado</span><p>Elemento de HTML delimitado por &lt; &gt;, como &lt;p&gt; o &lt;div&gt;.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Define qué tipo de contenido es cada parte de la página.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;p&gt;Texto&lt;/p&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 atributo</p>
+        <div class="row"><span class="tag def">Significado</span><p>Información extra que se agrega dentro de una etiqueta.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Modifica o da datos adicionales al elemento.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;img src="foto.png"&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 class</p>
+        <div class="row"><span class="tag def">Significado</span><p>Atributo que le da un nombre a un elemento para aplicarle estilos.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Agrupar y reutilizar estilos entre varios elementos.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;p class="destacado"&gt;Hola&lt;/p&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 id</p>
+        <div class="row"><span class="tag def">Significado</span><p>Atributo que le da un identificador único a un elemento.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Aplicar un estilo o función a un solo elemento específico.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;div id="titulo"&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 body</p>
+        <div class="row"><span class="tag def">Significado</span><p>Etiqueta que contiene todo el contenido visible de la página.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Dentro va el texto, imágenes, botones, etc.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;body&gt; ... &lt;/body&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 head</p>
+        <div class="row"><span class="tag def">Significado</span><p>Etiqueta que contiene información no visible de la página.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Configura metadatos y enlaza estilos.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;head&gt;&lt;title&gt;Mi página&lt;/title&gt;&lt;/head&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 div</p>
+        <div class="row"><span class="tag def">Significado</span><p>Etiqueta genérica que agrupa contenido en bloques.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Organizar y dividir secciones de la página.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;div class="tarjeta"&gt; ... &lt;/div&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 a</p>
+        <div class="row"><span class="tag def">Significado</span><p>Etiqueta que crea un enlace o link.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Llevar a otra página o sección al hacer clic.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;a href="https://ejemplo.com"&gt;link&lt;/a&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 href</p>
+        <div class="row"><span class="tag def">Significado</span><p>Atributo de &lt;a&gt; que indica a dónde lleva el enlace.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Define la URL de destino del link.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;a href="pagina.html"&gt;ir&lt;/a&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 style</p>
+        <div class="row"><span class="tag def">Significado</span><p>Atributo o etiqueta que define el estilo visual de un elemento.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Aplicar CSS directamente sobre el elemento.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">&lt;p style="color:pink;"&gt;Hola&lt;/p&gt;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 margin</p>
+        <div class="row"><span class="tag def">Significado</span><p>Propiedad CSS que define el espacio fuera del borde de un elemento.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Separar elementos entre sí.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">margin: 10px;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 padding</p>
+        <div class="row"><span class="tag def">Significado</span><p>Propiedad CSS que define el espacio interno de un elemento.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Darle "aire" al contenido dentro de un elemento.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">padding: 10px;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 border</p>
+        <div class="row"><span class="tag def">Significado</span><p>Propiedad CSS que dibuja un borde alrededor de un elemento.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Delimitar visualmente un elemento.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">border: 2px solid pink;</div></div>
+      </div>
+
+      <div class="term-card">
+        <p class="term-name">🎀 background</p>
+        <div class="row"><span class="tag def">Significado</span><p>Propiedad CSS que define el color o imagen de fondo.</p></div>
+        <div class="row"><span class="tag use">Para qué sirve</span><p>Darle color o imagen de fondo a un elemento.</p></div>
+        <div class="row"><span class="tag ej">Ejemplo</span><div class="code-box">background: #ffd6e8;</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ SÍMBOLOS ============ -->
+  <div class="section-title" id="simbolos"><h2>🔣 Símbolos esenciales de Python</h2></div>
+
+  <div class="sym-wrap">
+    <table class="sym-table">
+      <tr><th>Símbolo</th><th>Nombre</th><th>Para qué se usa</th></tr>
+      <tr><td class="sym">#</td><td>comentario / numeral</td><td>Escribir una aclaración que Python no ejecuta</td></tr>
+      <tr><td class="sym">=</td><td>asignación</td><td>Guardar un valor en una variable</td></tr>
+      <tr><td class="sym">==</td><td>igualdad</td><td>Comparar si dos valores son iguales</td></tr>
+      <tr><td class="sym">!=</td><td>desigualdad</td><td>Comparar si dos valores son diferentes</td></tr>
+      <tr><td class="sym">&gt;</td><td>mayor que</td><td>Comparar valores</td></tr>
+      <tr><td class="sym">&lt;</td><td>menor que</td><td>Comparar valores</td></tr>
+      <tr><td class="sym">&gt;=</td><td>mayor o igual</td><td>Comparar valores</td></tr>
+      <tr><td class="sym">&lt;=</td><td>menor o igual</td><td>Comparar valores</td></tr>
+      <tr><td class="sym">+</td><td>suma</td><td>Sumar números o concatenar texto</td></tr>
+      <tr><td class="sym">-</td><td>resta</td><td>Restar números</td></tr>
+      <tr><td class="sym">*</td><td>multiplicación</td><td>Multiplicar números</td></tr>
+      <tr><td class="sym">/</td><td>división</td><td>Dividir números</td></tr>
+      <tr><td class="sym">//</td><td>división entera</td><td>Obtener solo la parte entera de una división</td></tr>
+      <tr><td class="sym">%</td><td>módulo</td><td>Obtener el resto de una división</td></tr>
+      <tr><td class="sym">**</td><td>potencia</td><td>Elevar un número a otro</td></tr>
+      <tr><td class="sym">"</td><td>comillas dobles</td><td>Crear cadenas de texto</td></tr>
+      <tr><td class="sym">'</td><td>comillas simples</td><td>Crear cadenas de texto</td></tr>
+      <tr><td class="sym">()</td><td>paréntesis</td><td>Llamar funciones y agrupar expresiones</td></tr>
+      <tr><td class="sym">[]</td><td>corchetes</td><td>Crear o acceder a listas</td></tr>
+      <tr><td class="sym">{}</td><td>llaves</td><td>Diccionarios y conjuntos</td></tr>
+      <tr><td class="sym">:</td><td>dos puntos</td><td>Iniciar bloques como if, for, def</td></tr>
+      <tr><td class="sym">,</td><td>coma</td><td>Separar elementos o argumentos</td></tr>
+      <tr><td class="sym">.</td><td>punto</td><td>Acceder a métodos o atributos</td></tr>
+      <tr><td class="sym">;</td><td>punto y coma</td><td>Separar instrucciones (casi no se usa en Python)</td></tr>
+      <tr><td class="sym">\</td><td>barra invertida</td><td>Secuencias especiales dentro de strings</td></tr>
+      <tr><td class="sym">\n</td><td>salto de línea</td><td>Saltar a una nueva línea dentro de un string</td></tr>
+    </table>
+  </div>
+
+  <div class="sym-wrap">
+    <table class="sym-table">
+      <tr><th>Palabra</th><th>Nombre</th><th>Para qué se usa</th></tr>
+      <tr><td class="sym">and</td><td>Y</td><td>Combinar condiciones: las dos deben cumplirse</td></tr>
+      <tr><td class="sym">or</td><td>O</td><td>Combinar condiciones: alcanza con que una se cumpla</td></tr>
+      <tr><td class="sym">not</td><td>NO</td><td>Invertir el valor de una condición</td></tr>
+      <tr><td class="sym">in</td><td>pertenece</td><td>Verificar si algo está dentro de una colección</td></tr>
+      <tr><td class="sym">is</td><td>identidad</td><td>Comparar si dos variables son el mismo objeto</td></tr>
+    </table>
+  </div>
+  </section>
+
+  <hr class="part-divider">
+
+  <section id="primerospasos">
+<div class="part-banner gb">
+      <h2>🐣 Parte 2 — Primeros pasos</h2>
+      <p>instalación, VS Code, errores, conversión de tipos y Git/GitHub</p>
+      <nav class="pills">
+        <a href="#instalar">💾 Instalar</a>
+        <a href="#vscode">🖥️ VS Code</a>
+        <a href="#indentacion">📐 Indentación</a>
+        <a href="#errores">🚨 Errores</a>
+        <a href="#conversion">🔄 Conversión</a>
+        <a href="#sinoptico">🗺️ Sinóptico</a>
+        <a href="#github">🐙 GitHub</a>
+        <a href="#ejercicios">✏️ Ejercicios</a>
+      </nav>
+    </div>
+
+  <!-- ============ INSTALAR ============ -->
+  <div class="section-title" id="instalar"><h2>💾 ¿Qué necesito instalar?</h2></div>
+  <div class="section-intro">Antes de escribir la primera línea de código, necesitás dos programas: Python (el lenguaje) y VS Code (el editor donde vas a escribir).</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Descargar Python</h3>
+        <p>Entrá a <strong>python.org/downloads</strong> y descargá la última versión. Si usás Windows, es clave que durante la instalación tildes la casilla <strong>"Add Python to PATH"</strong> — si no la tildás, la computadora no va a reconocer el comando python después.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Verificar que se instaló bien</h3>
+        <p>Abrí la terminal (símbolo del sistema en Windows, o Terminal en Mac) y escribí:</p>
+        <div class="code-box term"><span class="prompt">$</span> python --version</div>
+        <p>Si te muestra un número de versión (ej: Python 3.12.4), quedó instalado correctamente.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Descargar VS Code</h3>
+        <p>Entrá a <strong>code.visualstudio.com</strong> y descargá el instalador para tu sistema operativo. Es gratuito.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3>Instalar la extensión de Python</h3>
+        <p>Abrí VS Code, andá al ícono de extensiones (los cuadraditos de la barra izquierda), buscá <strong>"Python"</strong> (la de Microsoft, con el logo azul/amarillo) e instalala. Esto le da a VS Code la capacidad de entender y ejecutar código Python.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ VS CODE ============ -->
+  <div class="section-title" id="vscode"><h2>🖥️ Usar VS Code para programar</h2></div>
+  <div class="section-intro">Con Python y la extensión instalados, así es el flujo de trabajo básico dentro de VS Code.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Crear una carpeta de proyecto</h3>
+        <p>En tu computadora, creá una carpeta (por ejemplo "mis_proyectos_python") donde vas a guardar todos tus archivos.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Abrir la carpeta en VS Code</h3>
+        <p>Menú <strong>File &gt; Open Folder</strong> (Archivo &gt; Abrir carpeta) y seleccioná la carpeta que creaste. Así VS Code va a mostrar todos tus archivos en el panel izquierdo.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Crear un archivo nuevo</h3>
+        <p>Clic derecho en el panel izquierdo &gt; <strong>New File</strong>, y ponele un nombre terminado en <strong>.py</strong> (por ejemplo: prueba.py). Esa extensión le dice a la computadora "esto es código Python".</p>
+        <div class="code-box">print("Hola, estoy aprendiendo Python")</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3>Ejecutar el archivo</h3>
+        <p>Arriba a la derecha vas a ver un botón de ▶ (Run Python File). También podés hacer clic derecho sobre el editor y elegir <strong>"Run Python File in Terminal"</strong>.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div>
+        <h3>Ver el resultado</h3>
+        <p>El resultado aparece en la <strong>terminal integrada</strong>, en la parte de abajo de VS Code. Si no la ves, abrila con el menú <strong>View &gt; Terminal</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-box">💡 Atajos que ahorran tiempo: <strong>Ctrl + S</strong> guarda el archivo, <strong>Ctrl + `</strong> (comilla invertida) abre/cierra la terminal, <strong>Ctrl + Z</strong> deshace.</div>
+
+  <!-- ============ INDENTACIÓN ============ -->
+  <div class="section-title" id="indentacion"><h2>📐 La indentación (súper importante)</h2></div>
+  <div class="section-intro">A diferencia de otros lenguajes que usan llaves { } para marcar bloques de código, en Python el <strong>espacio en blanco al principio de la línea (sangría)</strong> es parte de la sintaxis. Si lo escribís mal, el programa directamente no funciona.</div>
+
+  <div class="compare">
+    <div class="compare-box good">
+      <div class="label">✅ Correcto</div>
+      <div class="code-box">if edad >= 18:
+    print("sos mayor")
+    print("podés votar")</div>
+      <p style="font-size:0.8em; margin-top:6px;">Las dos líneas de adentro del if tienen la misma sangría (4 espacios).</p>
+    </div>
+    <div class="compare-box bad">
+      <div class="label">❌ Incorrecto</div>
+      <div class="code-box">if edad >= 18:
+print("sos mayor")
+    print("podés votar")</div>
+      <p style="font-size:0.8em; margin-top:6px;">La primera línea no tiene sangría y la segunda sí: Python no sabe qué pertenece al if.</p>
+    </div>
+  </div>
+
+  <div class="note-box">🌸 Regla de oro: usá siempre <strong>4 espacios</strong> por nivel de sangría. VS Code lo hace automático cuando apretás Tab después de los dos puntos <code>:</code>. Nunca mezcles espacios y tabs en el mismo archivo.</div>
+
+  <!-- ============ ERRORES ============ -->
+  <div class="section-title" id="errores"><h2>🚨 Cómo leer un error (traceback)</h2></div>
+  <div class="section-intro">Cuando algo sale mal, Python no se queda callado: te muestra un mensaje llamado <strong>traceback</strong>. Da miedo la primera vez, pero tiene una estructura fija y siempre conviene leerlo <strong>de abajo hacia arriba</strong>.</div>
+
+  <div class="traceback">
+<span class="tb-line">Traceback (most recent call last):</span>
+<span class="tb-line">  File "prueba.py", <span class="highlight">line 3</span>, in &lt;module&gt;</span>
+<span class="tb-line">    resultado = 10 / cero</span>
+<span class="tb-line arrow">                ~~~^~~~~~</span>
+<span class="tb-line highlight">ZeroDivisionError: division by zero</span>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div><h3>Última línea = el error en sí</h3><p>Te dice el <strong>tipo de error</strong> (ZeroDivisionError) y una breve descripción (division by zero). Es lo primero que hay que leer.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div><h3>"line 3" = dónde pasó</h3><p>Te indica el archivo y el número de línea exacto donde ocurrió el problema. Ahí es donde tenés que ir a mirar.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div><h3>La línea de código copiada</h3><p>Python te muestra la línea completa que causó el error, para que no tengas que buscarla.</p></div>
+    </div>
+  </div>
+
+  <div class="sym-wrap">
+    <table class="sym-table">
+      <tr><th>Error</th><th>Cuándo aparece</th><th>Ejemplo típico</th></tr>
+      <tr><td class="sym">NameError</td><td>Usás una variable que no existe o está mal escrita</td><td><code>print(nombre)</code> sin haber creado "nombre"</td></tr>
+      <tr><td class="sym">TypeError</td><td>Mezclás tipos de dato incompatibles</td><td><code>"edad: " + 22</code></td></tr>
+      <tr><td class="sym">SyntaxError</td><td>Falta algo en la escritura del código (paréntesis, dos puntos)</td><td><code>if edad > 18</code> sin los <code>:</code></td></tr>
+      <tr><td class="sym">IndentationError</td><td>La sangría está mal aplicada</td><td>Ver ejemplo de la sección anterior</td></tr>
+      <tr><td class="sym">ZeroDivisionError</td><td>Intentás dividir por cero</td><td><code>10 / 0</code></td></tr>
+      <tr><td class="sym">ValueError</td><td>El tipo es correcto pero el valor no tiene sentido</td><td><code>int("hola")</code></td></tr>
+    </table>
+  </div>
+
+  <!-- ============ CONVERSIÓN DE TIPOS ============ -->
+  <div class="section-title" id="conversion"><h2>🔄 Conversión de tipos y concatenación vs suma</h2></div>
+  <div class="section-intro">Uno de los errores más comunes al empezar es mezclar texto con números. Python es estricto: no suma "peras con manzanas" solo.</div>
+
+  <div class="sym-wrap">
+    <table class="sym-table">
+      <tr><th>Función</th><th>Convierte a</th><th>Ejemplo</th></tr>
+      <tr><td class="sym">int()</td><td>número entero</td><td><code>int("5")</code> → 5</td></tr>
+      <tr><td class="sym">float()</td><td>número con decimales</td><td><code>float("3.5")</code> → 3.5</td></tr>
+      <tr><td class="sym">str()</td><td>texto</td><td><code>str(5)</code> → "5"</td></tr>
+    </table>
+  </div>
+
+  <div class="compare">
+    <div class="compare-box bad">
+      <div class="label">❌ Esto rompe</div>
+      <div class="code-box">edad = 22
+print("Tengo " + edad + " años")
+# TypeError: no se puede sumar
+# un string con un int</div>
+    </div>
+    <div class="compare-box good">
+      <div class="label">✅ Esto funciona</div>
+      <div class="code-box">edad = 22
+print("Tengo " + str(edad) + " años")
+# convertimos el número a texto
+# antes de concatenar</div>
+    </div>
+  </div>
+
+  <div class="note-box">🌸 Tip: el símbolo <code>+</code> hace dos cosas distintas según el tipo de dato: entre números <strong>suma</strong> (<code>2 + 3</code> → 5), entre strings <strong>concatena</strong>, es decir, los pega (<code>"a" + "b"</code> → "ab"). Por eso no podés mezclar los dos sin convertir primero.</div>
+
+  <!-- ============ CUADRO SINÓPTICO ============ -->
+  <div class="section-title" id="sinoptico"><h2>🗺️ Cuadro sinóptico — Python de un vistazo</h2></div>
+
+  <div class="synoptic">
+    <div class="syn-card c1">
+      <h4>🔢 Tipos de dato</h4>
+      <ul>
+        <li><strong>int</strong> — números enteros</li>
+        <li><strong>float</strong> — números con decimales</li>
+        <li><strong>str</strong> — texto</li>
+        <li><strong>bool</strong> — True / False</li>
+        <li><strong>None</strong> — ausencia de valor</li>
+      </ul>
+    </div>
+    <div class="syn-card c2">
+      <h4>🔁 Estructuras de control</h4>
+      <ul>
+        <li><strong>if / elif / else</strong> — decisiones</li>
+        <li><strong>for</strong> — repetir por cada elemento</li>
+        <li><strong>while</strong> — repetir mientras se cumpla algo</li>
+        <li><strong>break / continue</strong> — cortar o saltear</li>
+      </ul>
+    </div>
+    <div class="syn-card c3">
+      <h4>📦 Estructuras de datos</h4>
+      <ul>
+        <li><strong>list</strong> — colección ordenada y editable</li>
+        <li><strong>tuple</strong> — colección ordenada fija</li>
+        <li><strong>dict</strong> — pares clave-valor</li>
+        <li><strong>set</strong> — elementos únicos</li>
+      </ul>
+    </div>
+    <div class="syn-card c4">
+      <h4>⚙️ Funciones y clases</h4>
+      <ul>
+        <li><strong>def</strong> — define una función</li>
+        <li><strong>return</strong> — devuelve un resultado</li>
+        <li><strong>class</strong> — define un objeto/molde</li>
+        <li><strong>import</strong> — trae código de otro módulo</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ GITHUB ============ -->
+  <div class="section-title" id="github"><h2>🐙 Usar Python junto a Git y GitHub</h2></div>
+  <div class="section-intro"><strong>Git</strong> es un sistema que guarda el historial de cambios de tu código (como un "control+z" infinito y ordenado). <strong>GitHub</strong> es una plataforma web donde subís ese historial, para tener respaldo online y poder compartir tus proyectos.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div><h3>Crear una cuenta en GitHub</h3><p>Entrá a <strong>github.com</strong> y registrate gratis.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div><h3>Instalar Git</h3><p>Descargalo de <strong>git-scm.com</strong>. Es el programa que corre "por detrás" y permite guardar versiones de tu código.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Configurar tu identidad (una sola vez)</h3>
+        <p>En la terminal de VS Code, escribí:</p>
+        <div class="code-box term"><span class="prompt">$</span> git config --global user.name "Micaela"
+<span class="prompt">$</span> git config --global user.email "tu-email@ejemplo.com"</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3>Crear un repositorio en GitHub</h3>
+        <p>En github.com, botón <strong>"New repository"</strong>, ponele un nombre (ej: mi-primer-proyecto) y creala.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div>
+        <h3>Conectar tu carpeta local con ese repositorio</h3>
+        <p>Desde la terminal, parada dentro de tu carpeta de proyecto:</p>
+        <div class="code-box term"><span class="prompt">$</span> git init
+<span class="prompt">$</span> git remote add origin https://github.com/tu-usuario/mi-primer-proyecto.git</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">6</div>
+      <div>
+        <h3>Guardar y subir tus cambios</h3>
+        <p>Cada vez que quieras guardar una versión de tu progreso:</p>
+        <div class="code-box term"><span class="prompt">$</span> git add .
+<span class="prompt">$</span> git commit -m "primer archivo de práctica"
+<span class="prompt">$</span> git push origin main</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">7</div>
+      <div>
+        <h3>O usá la interfaz gráfica de VS Code</h3>
+        <p>No hace falta escribir todos los comandos a mano: en el ícono de <strong>Source Control</strong> (la ramita, en la barra izquierda) podés ver los cambios, escribir el mensaje del commit y apretar el botón para subir, todo con clics.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sym-wrap">
+    <table class="sym-table">
+      <tr><th>Comando</th><th>Para qué sirve</th></tr>
+      <tr><td class="sym">git init</td><td>Convierte tu carpeta en un repositorio de Git</td></tr>
+      <tr><td class="sym">git status</td><td>Muestra qué archivos cambiaron</td></tr>
+      <tr><td class="sym">git add .</td><td>Prepara todos los cambios para guardarlos</td></tr>
+      <tr><td class="sym">git commit -m "..."</td><td>Guarda una versión con un mensaje descriptivo</td></tr>
+      <tr><td class="sym">git push</td><td>Sube los cambios guardados a GitHub</td></tr>
+      <tr><td class="sym">git pull</td><td>Trae cambios que estén en GitHub y no en tu compu</td></tr>
+      <tr><td class="sym">git clone [url]</td><td>Descarga una copia completa de un repositorio existente</td></tr>
+    </table>
+  </div>
+
+  <!-- ============ EJERCICIOS ============ -->
+  <div class="section-title" id="ejercicios"><h2>✏️ Mini ejercicios guiados</h2></div>
+
+  <div class="exercise">
+    <h4>Ejercicio 1 — Datos personales</h4>
+    <p class="consigna">Pedile al usuario su nombre y su edad, y calculá en qué año va a cumplir 100 años. (Pista: necesitás convertir la edad a número con <code>int()</code>.)</p>
+    <details>
+      <summary>Ver solución</summary>
+      <div class="code-box">nombre = input("¿Cómo te llamás? ")
+edad = int(input("¿Cuántos años tenés? "))
+anio_actual = 2026
+anio_100 = anio_actual + (100 - edad)
+print(nombre + ", vas a cumplir 100 en el " + str(anio_100))</div>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <h4>Ejercicio 2 — Tabla de multiplicar</h4>
+    <p class="consigna">Usando un <code>for</code> y <code>range()</code>, imprimí la tabla del 5 (del 1 al 10).</p>
+    <details>
+      <summary>Ver solución</summary>
+      <div class="code-box">for i in range(1, 11):
+    print("5 x", i, "=", 5 * i)</div>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <h4>Ejercicio 3 — Lista de frutas</h4>
+    <p class="consigna">Creá una lista con tus 3 frutas favoritas y recorrela con un <code>for</code> para imprimir "Me gusta [fruta]" por cada una.</p>
+    <details>
+      <summary>Ver solución</summary>
+      <div class="code-box">frutas = ["frutilla", "durazno", "uva"]
+for fruta in frutas:
+    print("Me gusta la", fruta)</div>
+    </details>
+  </div>
+
+  <div class="section-title"><h2>✅ Checklist antes de arrancar</h2></div>
+  <ul class="checklist">
+    <li>Python instalado y verificado con <code>python --version</code></li>
+    <li>VS Code instalado con la extensión de Python</li>
+    <li>Sé crear y ejecutar un archivo .py</li>
+    <li>Entiendo por qué la indentación importa</li>
+    <li>Sé leer al menos la última línea de un traceback</li>
+    <li>Cuenta de GitHub creada y Git configurado</li>
+  </ul>
+  </section>
+
+  <hr class="part-divider">
+
+  <section id="proyecto">
+  <div class="part-banner pb">
+    <h2>🚀 Parte 3 — Tu primer proyecto y portfolio</h2>
+    <p>de carpeta vacía a proyecto funcionando y publicado en GitHub</p>
+    <nav class="pills" style="margin-top:14px;">
+      <a href="#primer-proyecto" style="background:var(--peach-deep); box-shadow:0 3px 0 #ff9d4d;">📁 Crear el proyecto</a>
+      <a href="#ejecutar" style="background:var(--peach-deep); box-shadow:0 3px 0 #ff9d4d;">▶️ Ejecutarlo</a>
+      <a href="#subir-github" style="background:var(--peach-deep); box-shadow:0 3px 0 #ff9d4d;">🐙 Subirlo a GitHub</a>
+      <a href="#portfolio" style="background:var(--peach-deep); box-shadow:0 3px 0 #ff9d4d;">💼 Armar tu portfolio</a>
+    </nav>
+  </div>
+
+  <!-- ============ CREAR PROYECTO ============ -->
+  <div class="section-title" id="primer-proyecto"><h2>📁 Crear tu primer proyecto (carpeta y estructura)</h2></div>
+  <div class="section-intro">Una cosa es "tener Python instalado" y otra muy distinta es tener <strong>un proyecto</strong>: una carpeta prolija, con nombre propio, lista para mostrar. Acá el paso a paso completo, desde cero.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Creá una carpeta específica para ESTE proyecto</h3>
+        <p>No lo mezcles con tu carpeta general de práctica. Cada proyecto que quieras mostrar en tu portfolio merece su propia carpeta, con un nombre claro y sin espacios (usá guiones medios). Por ejemplo, si es tu contador de bases de ADN:</p>
+        <div class="code-box term"><span class="prompt">$</span> mkdir contador-adn
+<span class="prompt">$</span> cd contador-adn</div>
+        <p style="margin-top:6px;">(También podés crearla a mano desde el explorador de archivos, sin usar la terminal — el resultado es el mismo.)</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Abrí ESA carpeta en VS Code</h3>
+        <p><strong>File &gt; Open Folder</strong> y seleccioná justo la carpeta del proyecto (contador-adn), no una carpeta más general que la contenga. Esto es importante: así VS Code y Git van a trabajar solo con los archivos de este proyecto.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Armá la estructura de archivos</h3>
+        <p>Un proyecto prolijo, aunque sea chiquito, tiene como mínimo un archivo de código y un archivo que lo explique:</p>
+        <div class="folder-tree">
+<span class="comment">contador-adn/</span>
+<span class="folder">📁 contador-adn</span>
+ ├── <span class="file">main.py</span>        <span class="comment"># tu código</span>
+ ├── <span class="file">README.md</span>      <span class="comment"># qué hace el proyecto y cómo correrlo</span>
+ └── <span class="file">.gitignore</span>     <span class="comment"># qué archivos NO subir a GitHub</span>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3>Escribí un README.md desde el principio</h3>
+        <p>No lo dejes para el final. El README es el primer archivo que alguien lee cuando entra a tu repositorio — es literalmente la carta de presentación de tu proyecto. Con esto alcanza para empezar:</p>
+        <div class="code-box"># Contador de bases de ADN
+
+Programa en Python que cuenta cuántas veces aparece
+cada base (A, T, C, G) en una secuencia de ADN.
+
+## Cómo correrlo
+python main.py
+
+## Qué aprendí haciéndolo
+Manejo de diccionarios y recorrido de strings.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-box">🌸 Tip: usá siempre nombres de carpeta en minúscula y con guiones medios (contador-adn, no "Contador ADN"). Es la convención que vas a ver en casi todos los proyectos de GitHub, y evita problemas con espacios en la terminal.</div>
+
+  <!-- ============ EJECUTAR ============ -->
+  <div class="section-title" id="ejecutar"><h2>▶️ Ejecutar el proyecto (el botón de play)</h2></div>
+  <div class="section-intro">Ya vimos esto para un archivo suelto — acá el detalle fino para cuando tenés un proyecto completo abierto.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Revisá el intérprete de Python (abajo a la derecha)</h3>
+        <p>En la barra inferior de VS Code vas a ver algo como "Python 3.12.4". Si dice "Select Interpreter" en vez de un número de versión, hacé clic ahí y elegí la versión de Python que instalaste.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Abrí el archivo que querés correr</h3>
+        <p>Hacé clic en <strong>main.py</strong> en el panel izquierdo para que esté activo en el editor. VS Code ejecuta el archivo que tenés abierto y seleccionado, no "el proyecto" en general.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Apretá play ▶</h3>
+        <p>Botón de play arriba a la derecha, o clic derecho &gt; <strong>Run Python File in Terminal</strong>. Si tu código usa <code>input()</code>, la terminal se va a quedar esperando que escribas algo — hacelo ahí mismo y apretá Enter.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3>Si algo falla, mirá la terminal</h3>
+        <p>El traceback (¿te acordás de la Parte 2?) va a aparecer justo ahí abajo, con la línea exacta del problema.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SUBIR A GITHUB ============ -->
+  <div class="section-title" id="subir-github"><h2>🐙 Subir el proyecto a GitHub</h2></div>
+  <div class="section-intro">Con el proyecto funcionando, el siguiente paso es que quede guardado y visible online.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Creá el repositorio en GitHub</h3>
+        <p>En github.com, botón <strong>"New repository"</strong>. Usá el mismo nombre que la carpeta (contador-adn), agregá una breve descripción, y dejalo en <strong>Public</strong> si querés que forme parte de tu portfolio. No tildes "Add a README" si ya creaste el tuyo en VS Code.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Opción fácil: "Publish to GitHub" desde VS Code</h3>
+        <p>En el ícono de <strong>Source Control</strong> (la ramita, barra izquierda) vas a ver un botón que dice <strong>"Publish to Branch"</strong> o <strong>"Publish to GitHub"</strong>. Con un clic, VS Code inicializa el repositorio, hace el primer commit y lo sube — sin escribir un solo comando.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Opción manual: por terminal</h3>
+        <p>Si preferís hacerlo a mano (viene bien para entender qué está pasando):</p>
+        <div class="code-box term"><span class="prompt">$</span> git init
+<span class="prompt">$</span> git add .
+<span class="prompt">$</span> git commit -m "primer commit: contador de ADN"
+<span class="prompt">$</span> git branch -M main
+<span class="prompt">$</span> git remote add origin https://github.com/tu-usuario/contador-adn.git
+<span class="prompt">$</span> git push -u origin main</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3>Agregá un .gitignore</h3>
+        <p>Este archivo le dice a Git qué carpetas o archivos <strong>no</strong> subir (entornos virtuales, archivos temporales). Para un proyecto simple de Python, con esto alcanza:</p>
+        <div class="code-box">__pycache__/
+*.pyc
+.venv/
+venv/</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <div class="section-title" id="portfolio"><h2>💼 Convertir tu GitHub en portfolio</h2></div>
+  <div class="section-intro">GitHub no es solo un lugar para guardar código: bien armado, funciona como una carta de presentación pública de todo lo que vas aprendiendo.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Creá tu README de perfil</h3>
+        <p>Creá un repositorio nuevo con el <strong>mismo nombre que tu usuario</strong> de GitHub (ej: si tu usuario es "micaelabarros", el repo se llama "micaelabarros"). El README.md de ese repo se muestra automáticamente arriba de todo en tu perfil, como una presentación tuya.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Fijá (pin) tus mejores repositorios</h3>
+        <p>En tu perfil de GitHub hay un botón <strong>"Customize your pins"</strong> donde elegís hasta 6 proyectos para que aparezcan destacados arriba de todo. Elegí los que mejor muestren lo que sabés hacer, no todos los que tengas.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Cuidá el README de cada proyecto</h3>
+        <p>Cada repo que muestres debería tener, como mínimo: qué hace el proyecto, cómo correrlo, y qué tecnologías usaste. Si es algo visual (una web, un diseño), agregá una captura de pantalla directamente en el README.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="compare">
+    <div class="compare-box bad">
+      <div class="label">⚠️ Ojo con esto</div>
+      <p style="font-size:0.85em;">GitHub Pages publica páginas <strong>estáticas</strong> (HTML, CSS, JS). Sirve genial para mostrar sitios web, portfolios visuales o presentaciones — pero <strong>no ejecuta código Python en vivo</strong>. Si subís un main.py y activás Pages, la gente va a poder leer el código, no correrlo desde el navegador.</p>
+    </div>
+    <div class="compare-box good">
+      <div class="label">✅ Qué hacer en cada caso</div>
+      <p style="font-size:0.85em;"><strong>Proyecto web (HTML/CSS):</strong> usá GitHub Pages, se ve en vivo.<br><strong>Proyecto Python:</strong> mostralo con un buen README + capturas o un GIF corto del programa corriendo. Para que alguien lo pruebe sin instalar nada, podés linkear una versión en <strong>Replit</strong> o, si es un notebook, en <strong>Google Colab</strong>.</p>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">➜</div>
+      <div>
+        <h3>Cómo activar GitHub Pages (para tus proyectos web)</h3>
+        <p>Dentro del repositorio: <strong>Settings &gt; Pages</strong> &gt; en "Source" elegí la rama <strong>main</strong> &gt; Guardar. A los pocos minutos tu sitio va a estar publicado en una dirección con el formato <code>tu-usuario.github.io/nombre-del-repo</code>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title"><h2>✅ Checklist de portfolio</h2></div>
+  <ul class="checklist">
+    <li>Cada proyecto vive en su propia carpeta con nombre claro</li>
+    <li>Cada proyecto tiene su README.md (qué hace, cómo correrlo)</li>
+    <li>Subí el proyecto con Publish to GitHub o los comandos manuales</li>
+    <li>Agregué un .gitignore para no subir archivos innecesarios</li>
+    <li>Creé el repositorio especial con mi nombre de usuario para el README de perfil</li>
+    <li>Fijé (pineé) mis mejores repositorios</li>
+    <li>Activé GitHub Pages en mis proyectos web, no en los de Python puro</li>
+  </ul>
+
+  </section>
+
+  <hr class="part-divider">
+
+  <section id="apuntes">
+  <div class="part-banner" style="margin-top:10px;">
+    <h2>📝 Parte 4 — Mis apuntes de Python</h2>
+    <p>tu propia página, hecha por vos, embebida acá para tenerla junto a todo lo demás</p>
+    <nav class="pills" style="margin-top:14px;">
+    </nav>
+  </div>
+
+  <div class="note-box" style="max-width:640px; margin:0 auto 20px;">
+    🌸 Esto es un visor embebido de tu propio archivo (<code>apuntes_kawaii_mica.html</code>). Como es tu diseño original con sus propias tipografías y colores, lo dejamos intacto en vez de mezclarlo con el estilo del resto de la guía. Si el recuadro te queda chico para leer cómodo, usá el botón de arriba para abrirlo en pantalla completa.
+  </div>
+
+  <div style="background:var(--card-bg); border:3px solid var(--lilac-deep); border-radius:24px; padding:10px; box-shadow:0 6px 0 var(--lilac-deep); margin-bottom:20px;">
+    <iframe src="apuntes_kawaii_mica.html" title="Mis apuntes de Python" style="width:100%; height:820px; border:none; border-radius:16px; display:block; background:#fff;" loading="lazy"></iframe>
+  </div>
+
+  </section>
+
+
+  <footer>
+    <div class="stars">✧･ﾟ: *✧･ﾟ:*</div>
+    de tu primera palabra en Python a tu primer proyecto publicado 🌸🐍💼
+  </footer>
+
+</div>
+</body>
+</html>
   <footer>hecho con 🩷 🐍</footer>
 </div>
 </body>
